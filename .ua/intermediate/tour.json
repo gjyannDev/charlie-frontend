@@ -1,0 +1,84 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the App Router entry files to see that this is a small Next.js frontend named my-app, with a root layout, a minimal home page, global providers, fonts, and metadata forming the application base.",
+    "nodeIds": [
+      "file:src/app/layout.tsx",
+      "file:src/app/page.tsx",
+      "file:src/lib/api/provider.tsx",
+      "file:src/lib/font.ts"
+    ],
+    "languageLesson": "In a Next.js App Router project, layout.tsx defines persistent UI and providers, while page.tsx defines the route content."
+  },
+  {
+    "order": 2,
+    "title": "App Shell and Routes",
+    "description": "Follow the root and auth layouts into the route group to understand how pages are nested, how the auth section gets its own wrapper, and where the sign-in route currently lives.",
+    "nodeIds": [
+      "file:src/app/layout.tsx",
+      "file:src/app/(auth)/layout.tsx",
+      "file:src/app/(auth)/signin/page.tsx",
+      "file:src/app/globals.css"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Authentication Sign-In Feature",
+    "description": "Read the sign-in page together with AuthForm to see the intended authentication surface: a route page backed by a client-side form using React Hook Form, Zod validation, shared fields, and disabled submit state handling.",
+    "nodeIds": [
+      "file:src/app/(auth)/signin/page.tsx",
+      "file:src/app/(auth)/signin/_components/AuthForm.tsx",
+      "file:src/shared/components/forms/TextField.tsx",
+      "file:src/shared/components/forms/PasswordField.tsx",
+      "file:src/components/ui/button.tsx"
+    ],
+    "languageLesson": "Client form components in App Router code usually declare client behavior separately from server-rendered route files."
+  },
+  {
+    "order": 4,
+    "title": "UI Primitives",
+    "description": "Explore the low-level shadcn-style primitives that compose navigation, buttons, fields, inputs, feedback, selections, separators, textareas, and tooltips across the app.",
+    "nodeIds": [
+      "file:src/components/ui/button.tsx",
+      "file:src/components/ui/field.tsx",
+      "file:src/components/ui/input.tsx",
+      "file:src/components/ui/password-input.tsx",
+      "file:src/components/ui/select.tsx",
+      "file:src/components/ui/checkbox.tsx",
+      "file:src/components/ui/sonner.tsx",
+      "file:src/shared/ui/BreadCrumbs.tsx"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Shared Form Wrappers",
+    "description": "Move from primitives to the React Hook Form wrappers that standardize labels, descriptions, validation errors, disabled states, and control-specific behavior for text, password, select, checkbox, and textarea inputs.",
+    "nodeIds": [
+      "file:src/shared/components/forms/TextField.tsx",
+      "file:src/shared/components/forms/PasswordField.tsx",
+      "file:src/shared/components/forms/SelectField.tsx",
+      "file:src/shared/components/forms/CheckBoxField.tsx",
+      "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "file:src/shared/components/forms/TextAreaField.tsx"
+    ],
+    "languageLesson": "Typed form wrappers reduce repetition by centralizing registration, controlled values, and error display around reusable UI primitives."
+  },
+  {
+    "order": 6,
+    "title": "API, Runtime, Styling, and Configuration",
+    "description": "Finish with the cross-cutting pieces: Axios setup, typed API helpers, TanStack Query defaults, error normalization, class-name merging, global Tailwind tokens, and the project configuration and analysis files that shape development.",
+    "nodeIds": [
+      "file:src/lib/config/axios.client.ts",
+      "file:src/lib/api/api.client.ts",
+      "file:src/lib/api/query.client.ts",
+      "file:src/shared/utils/api.helpers.ts",
+      "file:src/lib/utils.ts",
+      "file:src/app/globals.css",
+      "file:next.config.ts",
+      "file:eslint.config.mjs",
+      "file:postcss.config.mjs",
+      "file:.ua/.understandignore"
+    ]
+  }
+]

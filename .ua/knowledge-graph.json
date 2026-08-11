@@ -1,0 +1,2074 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "my-app",
+    "languages": [
+      "unknown",
+      "json",
+      "markdown",
+      "javascript",
+      "typescript",
+      "css"
+    ],
+    "frameworks": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "description": "Next.js frontend application with reusable UI primitives, shared form wrappers, API utilities, and project documentation.",
+    "analyzedAt": "2026-08-11T01:49:26.615Z",
+    "gitCommitHash": "4056d50fe1654f2f2e060c3d5637c09cbfd04161"
+  },
+  "nodes": [
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Project agent guidance warning that this Next.js version has breaking changes and local docs should be checked before coding.",
+      "tags": [
+        "agent-guidance",
+        "nextjs",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "One-line pointer that delegates Claude guidance to AGENTS.md.",
+      "tags": [
+        "agent-guidance",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Default create-next-app README covering local development, editing the app page, learning resources, and Vercel deployment.",
+      "tags": [
+        "readme",
+        "nextjs",
+        "development",
+        "deployment"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "components.json",
+      "summary": "shadcn/ui configuration for a React Server Components and TSX setup using Tailwind CSS, lucide icons, and project path aliases.",
+      "tags": [
+        "shadcn",
+        "tailwind",
+        "ui",
+        "aliases"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Node package manifest for the private Next.js app, defining dev/build/start/lint scripts and frontend dependencies.",
+      "tags": [
+        "npm",
+        "nextjs",
+        "react",
+        "dependencies"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "TypeScript configuration for a strict Next.js project with bundler resolution, React JSX, incremental builds, and @/* path aliases.",
+      "tags": [
+        "typescript",
+        "nextjs",
+        "compiler",
+        "aliases"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.ua/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".ua/.understandignore",
+      "summary": "Understand Anything ignore template with commented default, gitignore-derived, directory, and test-file exclusion patterns.",
+      "tags": [
+        "understand-anything",
+        "ignore-rules",
+        "analysis-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.ua/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".ua/config.json",
+      "summary": "Understand Anything configuration setting English as the analysis output language.",
+      "tags": [
+        "understand-anything",
+        "configuration",
+        "language"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/ui-conventions.md",
+      "type": "document",
+      "name": "UI Conventions",
+      "filePath": "docs/ui-conventions.md",
+      "summary": "Project UI guidelines for shadcn primitives, Tailwind tokens, naming, accessibility, state handling, TypeScript, and prohibited patterns.",
+      "tags": [
+        "documentation",
+        "ui",
+        "tailwind",
+        "accessibility",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "ESLint flat config combining Next.js core web vitals and TypeScript presets with standard build output ignores.",
+      "tags": [
+        "eslint",
+        "nextjs",
+        "typescript",
+        "linting"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next.config.ts",
+      "type": "file",
+      "name": "next.config.ts",
+      "filePath": "next.config.ts",
+      "summary": "Minimal typed Next.js configuration exporting an empty NextConfig object.",
+      "tags": [
+        "nextjs",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:postcss.config.mjs",
+      "type": "file",
+      "name": "postcss.config.mjs",
+      "filePath": "postcss.config.mjs",
+      "summary": "PostCSS config enabling the Tailwind CSS PostCSS plugin.",
+      "tags": [
+        "postcss",
+        "tailwind",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/(auth)/layout.tsx",
+      "type": "file",
+      "name": "Auth route layout",
+      "filePath": "src/app/(auth)/layout.tsx",
+      "summary": "Auth route wrapper that applies background styling and the shared main container around nested auth pages.",
+      "tags": [
+        "nextjs",
+        "layout",
+        "auth",
+        "react"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(auth)/layout.tsx#AdminAuthLayout",
+      "type": "function",
+      "name": "AdminAuthLayout",
+      "filePath": "src/app/(auth)/layout.tsx",
+      "summary": "Default exported React layout component for the auth route group.",
+      "tags": [
+        "react-component",
+        "layout",
+        "auth"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/(auth)/signin/_components/AuthForm.tsx",
+      "type": "file",
+      "name": "AuthForm.tsx",
+      "filePath": "src/app/(auth)/signin/_components/AuthForm.tsx",
+      "summary": "Client-side sign-in form using react-hook-form, Zod validation, shared field wrappers, and a disabled submit state.",
+      "tags": [
+        "react",
+        "form",
+        "auth",
+        "zod",
+        "react-hook-form"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/(auth)/signin/_components/AuthForm.tsx#AuthForm",
+      "type": "function",
+      "name": "AuthForm",
+      "filePath": "src/app/(auth)/signin/_components/AuthForm.tsx",
+      "summary": "Default exported sign-in form component accepting schema, submit handler, defaults, and external submission state.",
+      "tags": [
+        "react-component",
+        "auth",
+        "form",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/(auth)/signin/page.tsx",
+      "type": "file",
+      "name": "signin page",
+      "filePath": "src/app/(auth)/signin/page.tsx",
+      "summary": "Minimal Next.js sign-in page currently rendering placeholder text.",
+      "tags": [
+        "nextjs",
+        "page",
+        "auth"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(auth)/signin/page.tsx#page",
+      "type": "function",
+      "name": "page",
+      "filePath": "src/app/(auth)/signin/page.tsx",
+      "summary": "Default exported placeholder React page for the sign-in route.",
+      "tags": [
+        "react-component",
+        "nextjs-page",
+        "auth"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "src/app/globals.css",
+      "summary": "Global Tailwind v4 stylesheet defining design tokens, theme mappings, base typography/colors, and shared utilities such as main-container.",
+      "tags": [
+        "css",
+        "tailwind",
+        "design-tokens",
+        "global-styles"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/layout.tsx",
+      "type": "file",
+      "name": "Root layout",
+      "filePath": "src/app/layout.tsx",
+      "summary": "Root Next.js layout importing global styles, font variables, and app providers while defining page metadata.",
+      "tags": [
+        "nextjs",
+        "layout",
+        "metadata",
+        "providers",
+        "fonts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/layout.tsx#RootLayout",
+      "type": "function",
+      "name": "RootLayout",
+      "filePath": "src/app/layout.tsx",
+      "summary": "Default exported root layout component that wraps children in HTML, body, font classes, and Providers.",
+      "tags": [
+        "react-component",
+        "nextjs-layout",
+        "providers"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/page.tsx",
+      "type": "file",
+      "name": "Home page",
+      "filePath": "src/app/page.tsx",
+      "summary": "Minimal home page rendering a Hello World heading.",
+      "tags": [
+        "nextjs",
+        "page",
+        "react"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/page.tsx#Home",
+      "type": "function",
+      "name": "Home",
+      "filePath": "src/app/page.tsx",
+      "summary": "Default exported home page component.",
+      "tags": [
+        "react-component",
+        "nextjs-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/breadcrumb.tsx",
+      "type": "file",
+      "name": "breadcrumb.tsx",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "Composable breadcrumb primitives for navigation lists, links, current page labels, separators, and collapsed ellipsis display.",
+      "tags": [
+        "ui-component",
+        "breadcrumb",
+        "navigation",
+        "radix",
+        "lucide"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/breadcrumb.tsx#Breadcrumb",
+      "type": "function",
+      "name": "Breadcrumb",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "Navigation wrapper with breadcrumb ARIA labeling.",
+      "tags": [
+        "react-component",
+        "breadcrumb",
+        "accessibility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/breadcrumb.tsx#BreadcrumbList",
+      "type": "function",
+      "name": "BreadcrumbList",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "Ordered-list primitive for breadcrumb items with wrapping and muted text styling.",
+      "tags": [
+        "react-component",
+        "breadcrumb"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/breadcrumb.tsx#BreadcrumbItem",
+      "type": "function",
+      "name": "BreadcrumbItem",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "List-item primitive for individual breadcrumb entries.",
+      "tags": [
+        "react-component",
+        "breadcrumb"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/breadcrumb.tsx#BreadcrumbLink",
+      "type": "function",
+      "name": "BreadcrumbLink",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "Breadcrumb link primitive that can render through Radix Slot when asChild is enabled.",
+      "tags": [
+        "react-component",
+        "breadcrumb",
+        "radix-slot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/breadcrumb.tsx#BreadcrumbPage",
+      "type": "function",
+      "name": "BreadcrumbPage",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "Current-page breadcrumb label with ARIA current state.",
+      "tags": [
+        "react-component",
+        "breadcrumb",
+        "accessibility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/breadcrumb.tsx#BreadcrumbSeparator",
+      "type": "function",
+      "name": "BreadcrumbSeparator",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "Decorative breadcrumb separator with a default chevron icon.",
+      "tags": [
+        "react-component",
+        "breadcrumb",
+        "icon"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/breadcrumb.tsx#BreadcrumbEllipsis",
+      "type": "function",
+      "name": "BreadcrumbEllipsis",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "summary": "Collapsed breadcrumb indicator with an accessible screen-reader label.",
+      "tags": [
+        "react-component",
+        "breadcrumb",
+        "accessibility",
+        "icon"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/button.tsx",
+      "type": "file",
+      "name": "button.tsx",
+      "filePath": "src/components/ui/button.tsx",
+      "summary": "Button primitive built with class-variance-authority variants, Radix Slot composition, and size/variant styling.",
+      "tags": [
+        "ui-component",
+        "button",
+        "cva",
+        "radix-slot"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/button.tsx#Button",
+      "type": "function",
+      "name": "Button",
+      "filePath": "src/components/ui/button.tsx",
+      "summary": "Polymorphic button component supporting variant, size, and asChild rendering.",
+      "tags": [
+        "react-component",
+        "button",
+        "variant"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/checkbox.tsx",
+      "type": "file",
+      "name": "checkbox.tsx",
+      "filePath": "src/components/ui/checkbox.tsx",
+      "summary": "Client checkbox primitive wrapping Radix Checkbox with tokenized styling and a check icon indicator.",
+      "tags": [
+        "ui-component",
+        "checkbox",
+        "radix",
+        "lucide"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/checkbox.tsx#Checkbox",
+      "type": "function",
+      "name": "Checkbox",
+      "filePath": "src/components/ui/checkbox.tsx",
+      "summary": "Styled checkbox component based on Radix Checkbox Root and Indicator.",
+      "tags": [
+        "react-component",
+        "checkbox",
+        "form-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/field.tsx",
+      "type": "file",
+      "name": "field.tsx",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Client form-field primitive set covering fieldsets, labels, descriptions, separators, content wrappers, and de-duplicated validation errors.",
+      "tags": [
+        "ui-component",
+        "form",
+        "field",
+        "validation",
+        "cva"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldSet",
+      "type": "function",
+      "name": "FieldSet",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Fieldset wrapper with grouped form spacing rules.",
+      "tags": [
+        "react-component",
+        "form",
+        "fieldset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldLegend",
+      "type": "function",
+      "name": "FieldLegend",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Legend primitive supporting legend and label visual variants.",
+      "tags": [
+        "react-component",
+        "form",
+        "label"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldGroup",
+      "type": "function",
+      "name": "FieldGroup",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Container for related fields with responsive container-query spacing.",
+      "tags": [
+        "react-component",
+        "form",
+        "layout"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#Field",
+      "type": "function",
+      "name": "Field",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Field wrapper supporting vertical, horizontal, and responsive orientation variants.",
+      "tags": [
+        "react-component",
+        "form",
+        "variant"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldContent",
+      "type": "function",
+      "name": "FieldContent",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Content column wrapper for labels, descriptions, and control-related text.",
+      "tags": [
+        "react-component",
+        "form",
+        "layout"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldLabel",
+      "type": "function",
+      "name": "FieldLabel",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Field-specific label wrapper built on the shared Label primitive.",
+      "tags": [
+        "react-component",
+        "form",
+        "label"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldTitle",
+      "type": "function",
+      "name": "FieldTitle",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Non-label title element for field display groups.",
+      "tags": [
+        "react-component",
+        "form",
+        "text"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldDescription",
+      "type": "function",
+      "name": "FieldDescription",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Muted descriptive text primitive for form fields.",
+      "tags": [
+        "react-component",
+        "form",
+        "description"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldSeparator",
+      "type": "function",
+      "name": "FieldSeparator",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Field group separator that can optionally render centered content over a divider.",
+      "tags": [
+        "react-component",
+        "form",
+        "separator"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/field.tsx#FieldError",
+      "type": "function",
+      "name": "FieldError",
+      "filePath": "src/components/ui/field.tsx",
+      "summary": "Accessible error renderer that de-duplicates messages and supports single or list output.",
+      "tags": [
+        "react-component",
+        "form",
+        "validation",
+        "accessibility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/input.tsx",
+      "type": "file",
+      "name": "input.tsx",
+      "filePath": "src/components/ui/input.tsx",
+      "summary": "Styled input primitive using shared token classes for focus, disabled, file input, and invalid states.",
+      "tags": [
+        "ui-component",
+        "input",
+        "form-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/input.tsx#Input",
+      "type": "function",
+      "name": "Input",
+      "filePath": "src/components/ui/input.tsx",
+      "summary": "Reusable styled input component.",
+      "tags": [
+        "react-component",
+        "input",
+        "form-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/label.tsx",
+      "type": "file",
+      "name": "label.tsx",
+      "filePath": "src/components/ui/label.tsx",
+      "summary": "Client label primitive wrapping Radix Label with shared disabled and peer styling.",
+      "tags": [
+        "ui-component",
+        "label",
+        "radix",
+        "form"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/label.tsx#Label",
+      "type": "function",
+      "name": "Label",
+      "filePath": "src/components/ui/label.tsx",
+      "summary": "Styled Radix label component for form controls.",
+      "tags": [
+        "react-component",
+        "label",
+        "form-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/password-input.tsx",
+      "type": "file",
+      "name": "password-input.tsx",
+      "filePath": "src/components/ui/password-input.tsx",
+      "summary": "Password input primitive with local visibility toggle state and accessible show/hide button labels.",
+      "tags": [
+        "ui-component",
+        "password",
+        "input",
+        "state"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/password-input.tsx#PasswordInput",
+      "type": "function",
+      "name": "PasswordInput",
+      "filePath": "src/components/ui/password-input.tsx",
+      "summary": "Styled password input that toggles between password and text display using eye icons.",
+      "tags": [
+        "react-component",
+        "password",
+        "input",
+        "accessibility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/select.tsx",
+      "type": "file",
+      "name": "select.tsx",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Client Radix Select primitive collection for root, trigger, content, groups, labels, items, separators, and scroll controls.",
+      "tags": [
+        "ui-component",
+        "select",
+        "radix",
+        "dropdown",
+        "lucide"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#Select",
+      "type": "function",
+      "name": "Select",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Root select wrapper adding the select data slot.",
+      "tags": [
+        "react-component",
+        "select",
+        "radix"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectGroup",
+      "type": "function",
+      "name": "SelectGroup",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Styled select group container.",
+      "tags": [
+        "react-component",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectValue",
+      "type": "function",
+      "name": "SelectValue",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Select value wrapper with a data slot.",
+      "tags": [
+        "react-component",
+        "select"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectTrigger",
+      "type": "function",
+      "name": "SelectTrigger",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Select trigger with size variants and a chevron icon.",
+      "tags": [
+        "react-component",
+        "select",
+        "trigger",
+        "variant"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectContent",
+      "type": "function",
+      "name": "SelectContent",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Portal-rendered select dropdown content with positioning, animations, viewport, and scroll controls.",
+      "tags": [
+        "react-component",
+        "select",
+        "portal",
+        "dropdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectLabel",
+      "type": "function",
+      "name": "SelectLabel",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Muted label for select option groups.",
+      "tags": [
+        "react-component",
+        "select",
+        "label"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectItem",
+      "type": "function",
+      "name": "SelectItem",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Selectable item with checked indicator and focus/disabled styling.",
+      "tags": [
+        "react-component",
+        "select",
+        "item",
+        "accessibility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectSeparator",
+      "type": "function",
+      "name": "SelectSeparator",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Visual separator for select menus.",
+      "tags": [
+        "react-component",
+        "select",
+        "separator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectScrollUpButton",
+      "type": "function",
+      "name": "SelectScrollUpButton",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Scroll-up control for overflowing select content.",
+      "tags": [
+        "react-component",
+        "select",
+        "scroll-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/select.tsx#SelectScrollDownButton",
+      "type": "function",
+      "name": "SelectScrollDownButton",
+      "filePath": "src/components/ui/select.tsx",
+      "summary": "Scroll-down control for overflowing select content.",
+      "tags": [
+        "react-component",
+        "select",
+        "scroll-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/separator.tsx",
+      "type": "file",
+      "name": "separator.tsx",
+      "filePath": "src/components/ui/separator.tsx",
+      "summary": "Client separator primitive wrapping Radix Separator with horizontal and vertical token styling.",
+      "tags": [
+        "ui-component",
+        "separator",
+        "radix"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/separator.tsx#Separator",
+      "type": "function",
+      "name": "Separator",
+      "filePath": "src/components/ui/separator.tsx",
+      "summary": "Styled separator component with default horizontal decorative behavior.",
+      "tags": [
+        "react-component",
+        "separator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/sonner.tsx",
+      "type": "file",
+      "name": "sonner.tsx",
+      "filePath": "src/components/ui/sonner.tsx",
+      "summary": "Client Toaster wrapper integrating Sonner with next-themes, semantic lucide icons, CSS variables, and toast class names.",
+      "tags": [
+        "ui-component",
+        "toast",
+        "sonner",
+        "theme",
+        "lucide"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/sonner.tsx#Toaster",
+      "type": "function",
+      "name": "Toaster",
+      "filePath": "src/components/ui/sonner.tsx",
+      "summary": "Themed Sonner toaster component with custom icons and tokenized styling variables.",
+      "tags": [
+        "react-component",
+        "toast",
+        "theme"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/textarea.tsx",
+      "type": "file",
+      "name": "textarea.tsx",
+      "filePath": "src/components/ui/textarea.tsx",
+      "summary": "Styled textarea primitive with tokenized focus, disabled, and invalid states.",
+      "tags": [
+        "ui-component",
+        "textarea",
+        "form-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/textarea.tsx#Textarea",
+      "type": "function",
+      "name": "Textarea",
+      "filePath": "src/components/ui/textarea.tsx",
+      "summary": "Reusable styled textarea component.",
+      "tags": [
+        "react-component",
+        "textarea",
+        "form-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/tooltip.tsx",
+      "type": "file",
+      "name": "tooltip.tsx",
+      "filePath": "src/components/ui/tooltip.tsx",
+      "summary": "Client Radix Tooltip wrappers for provider, root, trigger, and portal-rendered content with arrow styling.",
+      "tags": [
+        "ui-component",
+        "tooltip",
+        "radix",
+        "portal"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/tooltip.tsx#TooltipProvider",
+      "type": "function",
+      "name": "TooltipProvider",
+      "filePath": "src/components/ui/tooltip.tsx",
+      "summary": "Tooltip provider wrapper with zero default delay.",
+      "tags": [
+        "react-component",
+        "tooltip",
+        "provider"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/tooltip.tsx#Tooltip",
+      "type": "function",
+      "name": "Tooltip",
+      "filePath": "src/components/ui/tooltip.tsx",
+      "summary": "Tooltip root wrapper with a data slot.",
+      "tags": [
+        "react-component",
+        "tooltip",
+        "radix"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/tooltip.tsx#TooltipTrigger",
+      "type": "function",
+      "name": "TooltipTrigger",
+      "filePath": "src/components/ui/tooltip.tsx",
+      "summary": "Tooltip trigger wrapper with a data slot.",
+      "tags": [
+        "react-component",
+        "tooltip",
+        "trigger"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/tooltip.tsx#TooltipContent",
+      "type": "function",
+      "name": "TooltipContent",
+      "filePath": "src/components/ui/tooltip.tsx",
+      "summary": "Portal-rendered tooltip content with animation classes and arrow rendering.",
+      "tags": [
+        "react-component",
+        "tooltip",
+        "portal"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/api/api.client.ts",
+      "type": "file",
+      "name": "api.client.ts",
+      "filePath": "src/lib/api/api.client.ts",
+      "summary": "Typed API client wrapper around a shared Axios instance that unwraps ApiResponse data for common HTTP methods and blob downloads.",
+      "tags": [
+        "api",
+        "axios",
+        "client",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/lib/api/api.client.ts#ApiClient",
+      "type": "class",
+      "name": "ApiClient",
+      "filePath": "src/lib/api/api.client.ts",
+      "summary": "HTTP client class exposing Axios defaults plus get, post, put, patch, delete, and downloadBlob helpers.",
+      "tags": [
+        "api-client",
+        "axios",
+        "http"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/api/provider.tsx",
+      "type": "file",
+      "name": "provider.tsx",
+      "filePath": "src/lib/api/provider.tsx",
+      "summary": "Client-side app provider that wraps children with React Query and global toast UI.",
+      "tags": [
+        "react",
+        "provider",
+        "react-query",
+        "toast"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/api/provider.tsx:Providers",
+      "type": "function",
+      "name": "Providers",
+      "filePath": "src/lib/api/provider.tsx",
+      "summary": "Exports a React component that provides QueryClient context and renders the Toaster.",
+      "tags": [
+        "react-component",
+        "provider",
+        "react-query"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/api/query.client.ts",
+      "type": "file",
+      "name": "query.client.ts",
+      "filePath": "src/lib/api/query.client.ts",
+      "summary": "Configures the shared TanStack Query client with default query caching and retry behavior.",
+      "tags": [
+        "react-query",
+        "client-config",
+        "data-fetching"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/config/axios.client.ts",
+      "type": "file",
+      "name": "axios.client.ts",
+      "filePath": "src/lib/config/axios.client.ts",
+      "summary": "Creates the shared Axios API client with base URL, credentials, timeout, and JSON accept header.",
+      "tags": [
+        "axios",
+        "api-client",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/font.ts",
+      "type": "file",
+      "name": "font.ts",
+      "filePath": "src/lib/font.ts",
+      "summary": "Defines Manrope and Inter font instances for Next.js font optimization.",
+      "tags": [
+        "fonts",
+        "next-font",
+        "theme"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Provides a Tailwind-aware class name merge helper.",
+      "tags": [
+        "utilities",
+        "classnames",
+        "tailwind"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Combines clsx conditional classes and tailwind-merge conflict resolution.",
+      "tags": [
+        "utility-function",
+        "classnames",
+        "tailwind"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/components/forms/CheckBoxField.tsx",
+      "type": "file",
+      "name": "CheckBoxField.tsx",
+      "filePath": "src/shared/components/forms/CheckBoxField.tsx",
+      "summary": "Reusable controlled checkbox form field with optional label, description, error, and hide-label mode.",
+      "tags": [
+        "form",
+        "checkbox",
+        "react-hook-form",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/components/forms/CheckBoxField.tsx:CheckboxField",
+      "type": "function",
+      "name": "CheckboxField",
+      "filePath": "src/shared/components/forms/CheckBoxField.tsx",
+      "summary": "Exports a generic React Hook Form checkbox component with boolean coercion and optional display text.",
+      "tags": [
+        "react-component",
+        "form-field",
+        "checkbox",
+        "generic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "type": "file",
+      "name": "CheckBoxFieldWithDescription.tsx",
+      "filePath": "src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "summary": "Reusable controlled checkbox card field with label, checkbox label, description, disabled state, and error rendering.",
+      "tags": [
+        "form",
+        "checkbox",
+        "description",
+        "react-hook-form"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/components/forms/CheckBoxFieldWithDescription.tsx:CheckBoxFieldWithDescription",
+      "type": "function",
+      "name": "CheckBoxFieldWithDescription",
+      "filePath": "src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "summary": "Exports a React Hook Form checkbox component styled as a descriptive selectable row.",
+      "tags": [
+        "react-component",
+        "form-field",
+        "checkbox",
+        "description"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/components/forms/PasswordField.tsx",
+      "type": "file",
+      "name": "PasswordField.tsx",
+      "filePath": "src/shared/components/forms/PasswordField.tsx",
+      "summary": "Reusable password input field that registers with React Hook Form and displays validation errors.",
+      "tags": [
+        "form",
+        "password",
+        "react-hook-form",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/shared/components/forms/PasswordField.tsx:PasswordField",
+      "type": "function",
+      "name": "PasswordField",
+      "filePath": "src/shared/components/forms/PasswordField.tsx",
+      "summary": "Exports a generic password field component with label, autocomplete, disabled state, and register options.",
+      "tags": [
+        "react-component",
+        "form-field",
+        "password",
+        "generic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/components/forms/SelectField.tsx",
+      "type": "file",
+      "name": "SelectField.tsx",
+      "filePath": "src/shared/components/forms/SelectField.tsx",
+      "summary": "Reusable controlled select field with optional clear value, tooltip, width controls, description, and error display.",
+      "tags": [
+        "form",
+        "select",
+        "react-hook-form",
+        "tooltip"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/shared/components/forms/SelectField.tsx:SelectField",
+      "type": "function",
+      "name": "SelectField",
+      "filePath": "src/shared/components/forms/SelectField.tsx",
+      "summary": "Exports a generic React Hook Form select component that maps string options to string, number, or undefined values.",
+      "tags": [
+        "react-component",
+        "form-field",
+        "select",
+        "generic",
+        "value-conversion"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/shared/components/forms/TextAreaField.tsx",
+      "type": "file",
+      "name": "TextAreaField.tsx",
+      "filePath": "src/shared/components/forms/TextAreaField.tsx",
+      "summary": "Reusable textarea field with label, description, row count, disabled state, and error rendering.",
+      "tags": [
+        "form",
+        "textarea",
+        "react-hook-form",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/shared/components/forms/TextAreaField.tsx:TextAreaField",
+      "type": "function",
+      "name": "TextAreaField",
+      "filePath": "src/shared/components/forms/TextAreaField.tsx",
+      "summary": "Exports a generic registered textarea component for React Hook Form forms.",
+      "tags": [
+        "react-component",
+        "form-field",
+        "textarea",
+        "generic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/components/forms/TextField.tsx",
+      "type": "file",
+      "name": "TextField.tsx",
+      "filePath": "src/shared/components/forms/TextField.tsx",
+      "summary": "Reusable registered text input field with numeric input support, description, required marker, and error rendering.",
+      "tags": [
+        "form",
+        "input",
+        "react-hook-form",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/components/forms/TextField.tsx:TextField",
+      "type": "function",
+      "name": "TextField",
+      "filePath": "src/shared/components/forms/TextField.tsx",
+      "summary": "Exports a generic text input component with React Hook Form registration and optional number-specific attributes.",
+      "tags": [
+        "react-component",
+        "form-field",
+        "input",
+        "generic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/ui/BreadCrumbs.tsx",
+      "type": "file",
+      "name": "BreadCrumbs.tsx",
+      "filePath": "src/shared/ui/BreadCrumbs.tsx",
+      "summary": "Reusable breadcrumb navigation component that renders linked intermediate crumbs and a current page crumb.",
+      "tags": [
+        "navigation",
+        "breadcrumbs",
+        "next-link",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/ui/BreadCrumbs.tsx:Breadcrumbs",
+      "type": "function",
+      "name": "Breadcrumbs",
+      "filePath": "src/shared/ui/BreadCrumbs.tsx",
+      "summary": "Exports a breadcrumb list component with optional link click handlers and last-item page rendering.",
+      "tags": [
+        "react-component",
+        "navigation",
+        "breadcrumbs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/utils/api.helpers.ts",
+      "type": "file",
+      "name": "api.helpers.ts",
+      "filePath": "src/shared/utils/api.helpers.ts",
+      "summary": "Normalizes unknown thrown values and Axios errors into Error objects with status and original error metadata.",
+      "tags": [
+        "api",
+        "errors",
+        "axios",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/utils/api.helpers.ts:normalizeError",
+      "type": "function",
+      "name": "normalizeError",
+      "filePath": "src/shared/utils/api.helpers.ts",
+      "summary": "Exports an error normalization helper that extracts messages and HTTP status from Axios or generic errors.",
+      "tags": [
+        "utility-function",
+        "error-handling",
+        "axios",
+        "api"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:CLAUDE.md",
+      "target": "document:AGENTS.md",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "document:AGENTS.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "config:package.json",
+      "target": "config:tsconfig.json",
+      "type": "configures",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "config:components.json",
+      "target": "config:tsconfig.json",
+      "type": "configures",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "config:components.json",
+      "target": "config:package.json",
+      "type": "depends_on",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "document:docs/ui-conventions.md",
+      "target": "file:src/components/ui/button.tsx",
+      "type": "documents",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "document:docs/ui-conventions.md",
+      "target": "file:src/components/ui/input.tsx",
+      "type": "documents",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "document:docs/ui-conventions.md",
+      "target": "file:src/components/ui/select.tsx",
+      "type": "documents",
+      "weight": 0.6,
+      "direction": "forward"
+    },
+    {
+      "source": "document:docs/ui-conventions.md",
+      "target": "file:src/components/ui/field.tsx",
+      "type": "documents",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "document:docs/ui-conventions.md",
+      "target": "file:src/app/globals.css",
+      "type": "documents",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/(auth)/layout.tsx",
+      "target": "function:src/app/(auth)/layout.tsx#AdminAuthLayout",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/app/(auth)/layout.tsx#AdminAuthLayout",
+      "target": "file:src/app/globals.css",
+      "type": "depends_on",
+      "weight": 0.5,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/(auth)/signin/_components/AuthForm.tsx",
+      "target": "function:src/app/(auth)/signin/_components/AuthForm.tsx#AuthForm",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/app/(auth)/signin/_components/AuthForm.tsx#AuthForm",
+      "target": "function:src/components/ui/button.tsx#Button",
+      "type": "calls",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/app/(auth)/signin/_components/AuthForm.tsx#AuthForm",
+      "target": "function:src/components/ui/field.tsx#FieldSet",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/app/(auth)/signin/_components/AuthForm.tsx#AuthForm",
+      "target": "function:src/components/ui/field.tsx#FieldGroup",
+      "type": "calls",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/(auth)/signin/page.tsx",
+      "target": "function:src/app/(auth)/signin/page.tsx#page",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/layout.tsx",
+      "target": "function:src/app/layout.tsx#RootLayout",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/layout.tsx",
+      "target": "file:src/app/globals.css",
+      "type": "imports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "function:src/app/page.tsx#Home",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/breadcrumb.tsx",
+      "target": "function:src/components/ui/breadcrumb.tsx#Breadcrumb",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/breadcrumb.tsx",
+      "target": "function:src/components/ui/breadcrumb.tsx#BreadcrumbList",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/breadcrumb.tsx",
+      "target": "function:src/components/ui/breadcrumb.tsx#BreadcrumbItem",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/breadcrumb.tsx",
+      "target": "function:src/components/ui/breadcrumb.tsx#BreadcrumbLink",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/breadcrumb.tsx",
+      "target": "function:src/components/ui/breadcrumb.tsx#BreadcrumbPage",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/breadcrumb.tsx",
+      "target": "function:src/components/ui/breadcrumb.tsx#BreadcrumbSeparator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/breadcrumb.tsx",
+      "target": "function:src/components/ui/breadcrumb.tsx#BreadcrumbEllipsis",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/button.tsx",
+      "target": "function:src/components/ui/button.tsx#Button",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/checkbox.tsx",
+      "target": "function:src/components/ui/checkbox.tsx#Checkbox",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldSet",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldLegend",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldGroup",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#Field",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldContent",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldLabel",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldTitle",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldDescription",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldSeparator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/field.tsx",
+      "target": "function:src/components/ui/field.tsx#FieldError",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/components/ui/field.tsx#FieldLabel",
+      "target": "function:src/components/ui/label.tsx#Label",
+      "type": "calls",
+      "weight": 0.9,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/components/ui/field.tsx#FieldSeparator",
+      "target": "function:src/components/ui/separator.tsx#Separator",
+      "type": "calls",
+      "weight": 0.9,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/input.tsx",
+      "target": "function:src/components/ui/input.tsx#Input",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/label.tsx",
+      "target": "function:src/components/ui/label.tsx#Label",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/password-input.tsx",
+      "target": "function:src/components/ui/password-input.tsx#PasswordInput",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#Select",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectGroup",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectValue",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectTrigger",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectContent",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectLabel",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectItem",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectSeparator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectScrollUpButton",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/select.tsx",
+      "target": "function:src/components/ui/select.tsx#SelectScrollDownButton",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/components/ui/select.tsx#SelectContent",
+      "target": "function:src/components/ui/select.tsx#SelectScrollUpButton",
+      "type": "calls",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/components/ui/select.tsx#SelectContent",
+      "target": "function:src/components/ui/select.tsx#SelectScrollDownButton",
+      "type": "calls",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/separator.tsx",
+      "target": "function:src/components/ui/separator.tsx#Separator",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/sonner.tsx",
+      "target": "function:src/components/ui/sonner.tsx#Toaster",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/textarea.tsx",
+      "target": "function:src/components/ui/textarea.tsx#Textarea",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/tooltip.tsx",
+      "target": "function:src/components/ui/tooltip.tsx#TooltipProvider",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/tooltip.tsx",
+      "target": "function:src/components/ui/tooltip.tsx#Tooltip",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/tooltip.tsx",
+      "target": "function:src/components/ui/tooltip.tsx#TooltipTrigger",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/tooltip.tsx",
+      "target": "function:src/components/ui/tooltip.tsx#TooltipContent",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/lib/api/api.client.ts",
+      "target": "class:src/lib/api/api.client.ts#ApiClient",
+      "type": "contains",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/lib/api/provider.tsx",
+      "target": "function:src/lib/api/provider.tsx:Providers",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/lib/api/provider.tsx",
+      "target": "file:src/lib/api/query.client.ts",
+      "type": "imports",
+      "weight": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/lib/api/provider.tsx:Providers",
+      "target": "file:src/lib/api/query.client.ts",
+      "type": "depends_on",
+      "weight": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/lib/utils.ts",
+      "target": "function:src/lib/utils.ts:cn",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/components/forms/CheckBoxField.tsx",
+      "target": "function:src/shared/components/forms/CheckBoxField.tsx:CheckboxField",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "target": "function:src/shared/components/forms/CheckBoxFieldWithDescription.tsx:CheckBoxFieldWithDescription",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/components/forms/PasswordField.tsx",
+      "target": "function:src/shared/components/forms/PasswordField.tsx:PasswordField",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/components/forms/SelectField.tsx",
+      "target": "function:src/shared/components/forms/SelectField.tsx:SelectField",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/components/forms/TextAreaField.tsx",
+      "target": "function:src/shared/components/forms/TextAreaField.tsx:TextAreaField",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/components/forms/TextField.tsx",
+      "target": "function:src/shared/components/forms/TextField.tsx:TextField",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/ui/BreadCrumbs.tsx",
+      "target": "function:src/shared/ui/BreadCrumbs.tsx:Breadcrumbs",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/shared/utils/api.helpers.ts",
+      "target": "function:src/shared/utils/api.helpers.ts:normalizeError",
+      "type": "exports",
+      "weight": 1,
+      "direction": "forward"
+    }
+  ],
+  "layers": [
+    {
+      "id": "application-routes",
+      "name": "Application Routes",
+      "description": "Next.js App Router layouts, route pages, and route-local components that define the application shell and authentication screens.",
+      "nodeIds": [
+        "file:src/app/layout.tsx",
+        "file:src/app/page.tsx",
+        "file:src/app/(auth)/layout.tsx",
+        "file:src/app/(auth)/signin/page.tsx",
+        "file:src/app/(auth)/signin/_components/AuthForm.tsx"
+      ]
+    },
+    {
+      "id": "ui-primitives",
+      "name": "UI Primitives",
+      "description": "Reusable shadcn/ui-style base components used to compose forms, navigation, inputs, feedback, and overlays.",
+      "nodeIds": [
+        "file:src/components/ui/breadcrumb.tsx",
+        "file:src/components/ui/button.tsx",
+        "file:src/components/ui/checkbox.tsx",
+        "file:src/components/ui/field.tsx",
+        "file:src/components/ui/input.tsx",
+        "file:src/components/ui/label.tsx",
+        "file:src/components/ui/password-input.tsx",
+        "file:src/components/ui/select.tsx",
+        "file:src/components/ui/separator.tsx",
+        "file:src/components/ui/sonner.tsx",
+        "file:src/components/ui/textarea.tsx",
+        "file:src/components/ui/tooltip.tsx",
+        "file:src/shared/ui/BreadCrumbs.tsx"
+      ]
+    },
+    {
+      "id": "shared-form-components",
+      "name": "Shared Form Components",
+      "description": "React Hook Form field wrappers that standardize text, password, checkbox, select, and textarea form controls.",
+      "nodeIds": [
+        "file:src/shared/components/forms/CheckBoxField.tsx",
+        "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+        "file:src/shared/components/forms/PasswordField.tsx",
+        "file:src/shared/components/forms/SelectField.tsx",
+        "file:src/shared/components/forms/TextAreaField.tsx",
+        "file:src/shared/components/forms/TextField.tsx"
+      ]
+    },
+    {
+      "id": "api-and-runtime-utilities",
+      "name": "API and Runtime Utilities",
+      "description": "Axios, TanStack Query, provider setup, font loading, class-name composition, and API error normalization utilities.",
+      "nodeIds": [
+        "file:src/lib/api/api.client.ts",
+        "file:src/lib/api/provider.tsx",
+        "file:src/lib/api/query.client.ts",
+        "file:src/lib/config/axios.client.ts",
+        "file:src/lib/font.ts",
+        "file:src/lib/utils.ts",
+        "file:src/shared/utils/api.helpers.ts"
+      ]
+    },
+    {
+      "id": "styling-and-design-system",
+      "name": "Styling and Design System",
+      "description": "Global CSS, design tokens, styling conventions, and component registry settings that shape the project visual system.",
+      "nodeIds": [
+        "file:src/app/globals.css",
+        "document:docs/ui-conventions.md",
+        "config:components.json"
+      ]
+    },
+    {
+      "id": "project-configuration",
+      "name": "Project Configuration",
+      "description": "Root configuration files for Next.js, TypeScript, linting, PostCSS, package metadata, and Understand Anything analysis settings.",
+      "nodeIds": [
+        "config:package.json",
+        "config:tsconfig.json",
+        "file:next.config.ts",
+        "file:eslint.config.mjs",
+        "file:postcss.config.mjs",
+        "config:.ua/config.json",
+        "file:.ua/.understandignore"
+      ]
+    },
+    {
+      "id": "documentation-and-agent-guidance",
+      "name": "Documentation and Agent Guidance",
+      "description": "Project README and agent instruction documents that describe usage, conventions, and collaboration guidance.",
+      "nodeIds": [
+        "document:README.md",
+        "document:AGENTS.md",
+        "document:CLAUDE.md"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project Overview",
+      "description": "Start with the App Router entry files to see that this is a small Next.js frontend named my-app, with a root layout, a minimal home page, global providers, fonts, and metadata forming the application base.",
+      "nodeIds": [
+        "file:src/app/layout.tsx",
+        "file:src/app/page.tsx",
+        "file:src/lib/api/provider.tsx",
+        "file:src/lib/font.ts"
+      ],
+      "languageLesson": "In a Next.js App Router project, layout.tsx defines persistent UI and providers, while page.tsx defines the route content."
+    },
+    {
+      "order": 2,
+      "title": "App Shell and Routes",
+      "description": "Follow the root and auth layouts into the route group to understand how pages are nested, how the auth section gets its own wrapper, and where the sign-in route currently lives.",
+      "nodeIds": [
+        "file:src/app/layout.tsx",
+        "file:src/app/(auth)/layout.tsx",
+        "file:src/app/(auth)/signin/page.tsx",
+        "file:src/app/globals.css"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Authentication Sign-In Feature",
+      "description": "Read the sign-in page together with AuthForm to see the intended authentication surface: a route page backed by a client-side form using React Hook Form, Zod validation, shared fields, and disabled submit state handling.",
+      "nodeIds": [
+        "file:src/app/(auth)/signin/page.tsx",
+        "file:src/app/(auth)/signin/_components/AuthForm.tsx",
+        "file:src/shared/components/forms/TextField.tsx",
+        "file:src/shared/components/forms/PasswordField.tsx",
+        "file:src/components/ui/button.tsx"
+      ],
+      "languageLesson": "Client form components in App Router code usually declare client behavior separately from server-rendered route files."
+    },
+    {
+      "order": 4,
+      "title": "UI Primitives",
+      "description": "Explore the low-level shadcn-style primitives that compose navigation, buttons, fields, inputs, feedback, selections, separators, textareas, and tooltips across the app.",
+      "nodeIds": [
+        "file:src/components/ui/button.tsx",
+        "file:src/components/ui/field.tsx",
+        "file:src/components/ui/input.tsx",
+        "file:src/components/ui/password-input.tsx",
+        "file:src/components/ui/select.tsx",
+        "file:src/components/ui/checkbox.tsx",
+        "file:src/components/ui/sonner.tsx",
+        "file:src/shared/ui/BreadCrumbs.tsx"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Shared Form Wrappers",
+      "description": "Move from primitives to the React Hook Form wrappers that standardize labels, descriptions, validation errors, disabled states, and control-specific behavior for text, password, select, checkbox, and textarea inputs.",
+      "nodeIds": [
+        "file:src/shared/components/forms/TextField.tsx",
+        "file:src/shared/components/forms/PasswordField.tsx",
+        "file:src/shared/components/forms/SelectField.tsx",
+        "file:src/shared/components/forms/CheckBoxField.tsx",
+        "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+        "file:src/shared/components/forms/TextAreaField.tsx"
+      ],
+      "languageLesson": "Typed form wrappers reduce repetition by centralizing registration, controlled values, and error display around reusable UI primitives."
+    },
+    {
+      "order": 6,
+      "title": "API, Runtime, Styling, and Configuration",
+      "description": "Finish with the cross-cutting pieces: Axios setup, typed API helpers, TanStack Query defaults, error normalization, class-name merging, global Tailwind tokens, and the project configuration and analysis files that shape development.",
+      "nodeIds": [
+        "file:src/lib/config/axios.client.ts",
+        "file:src/lib/api/api.client.ts",
+        "file:src/lib/api/query.client.ts",
+        "file:src/shared/utils/api.helpers.ts",
+        "file:src/lib/utils.ts",
+        "file:src/app/globals.css",
+        "file:next.config.ts",
+        "file:eslint.config.mjs",
+        "file:postcss.config.mjs",
+        "file:.ua/.understandignore"
+      ]
+    }
+  ]
+}

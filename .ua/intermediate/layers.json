@@ -1,0 +1,95 @@
+[
+  {
+    "id": "application-routes",
+    "name": "Application Routes",
+    "description": "Next.js App Router layouts, route pages, and route-local components that define the application shell and authentication screens.",
+    "nodeIds": [
+      "file:src/app/layout.tsx",
+      "file:src/app/page.tsx",
+      "file:src/app/(auth)/layout.tsx",
+      "file:src/app/(auth)/signin/page.tsx",
+      "file:src/app/(auth)/signin/_components/AuthForm.tsx"
+    ]
+  },
+  {
+    "id": "ui-primitives",
+    "name": "UI Primitives",
+    "description": "Reusable shadcn/ui-style base components used to compose forms, navigation, inputs, feedback, and overlays.",
+    "nodeIds": [
+      "file:src/components/ui/breadcrumb.tsx",
+      "file:src/components/ui/button.tsx",
+      "file:src/components/ui/checkbox.tsx",
+      "file:src/components/ui/field.tsx",
+      "file:src/components/ui/input.tsx",
+      "file:src/components/ui/label.tsx",
+      "file:src/components/ui/password-input.tsx",
+      "file:src/components/ui/select.tsx",
+      "file:src/components/ui/separator.tsx",
+      "file:src/components/ui/sonner.tsx",
+      "file:src/components/ui/textarea.tsx",
+      "file:src/components/ui/tooltip.tsx",
+      "file:src/shared/ui/BreadCrumbs.tsx"
+    ]
+  },
+  {
+    "id": "shared-form-components",
+    "name": "Shared Form Components",
+    "description": "React Hook Form field wrappers that standardize text, password, checkbox, select, and textarea form controls.",
+    "nodeIds": [
+      "file:src/shared/components/forms/CheckBoxField.tsx",
+      "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "file:src/shared/components/forms/PasswordField.tsx",
+      "file:src/shared/components/forms/SelectField.tsx",
+      "file:src/shared/components/forms/TextAreaField.tsx",
+      "file:src/shared/components/forms/TextField.tsx"
+    ]
+  },
+  {
+    "id": "api-and-runtime-utilities",
+    "name": "API and Runtime Utilities",
+    "description": "Axios, TanStack Query, provider setup, font loading, class-name composition, and API error normalization utilities.",
+    "nodeIds": [
+      "file:src/lib/api/api.client.ts",
+      "file:src/lib/api/provider.tsx",
+      "file:src/lib/api/query.client.ts",
+      "file:src/lib/config/axios.client.ts",
+      "file:src/lib/font.ts",
+      "file:src/lib/utils.ts",
+      "file:src/shared/utils/api.helpers.ts"
+    ]
+  },
+  {
+    "id": "styling-and-design-system",
+    "name": "Styling and Design System",
+    "description": "Global CSS, design tokens, styling conventions, and component registry settings that shape the project visual system.",
+    "nodeIds": [
+      "file:src/app/globals.css",
+      "document:docs/ui-conventions.md",
+      "config:components.json"
+    ]
+  },
+  {
+    "id": "project-configuration",
+    "name": "Project Configuration",
+    "description": "Root configuration files for Next.js, TypeScript, linting, PostCSS, package metadata, and Understand Anything analysis settings.",
+    "nodeIds": [
+      "config:package.json",
+      "config:tsconfig.json",
+      "file:next.config.ts",
+      "file:eslint.config.mjs",
+      "file:postcss.config.mjs",
+      "config:.ua/config.json",
+      "file:.ua/.understandignore"
+    ]
+  },
+  {
+    "id": "documentation-and-agent-guidance",
+    "name": "Documentation and Agent Guidance",
+    "description": "Project README and agent instruction documents that describe usage, conventions, and collaboration guidance.",
+    "nodeIds": [
+      "document:README.md",
+      "document:AGENTS.md",
+      "document:CLAUDE.md"
+    ]
+  }
+]

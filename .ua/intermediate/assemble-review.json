@@ -1,0 +1,61 @@
+{
+  "issues": [],
+  "warnings": [],
+  "notes": [
+    "Reviewed assembled-graph.json against batch-1.json, batch-2.json, and batch-3.json.",
+    "No dangling edges, duplicate node IDs, duplicate source-target-type edges, malformed required node or edge fields, or missing file-level nodes for batch symbol nodes were found.",
+    "Edge direction and type usage appears consistent for contains, exports, imports, renders_component, uses, documentation, and configuration relationship edges."
+  ],
+  "stats": {
+    "assembled": {
+      "nodes": 99,
+      "edges": 77,
+      "duplicateNodeIds": 0,
+      "duplicateEdges": 0,
+      "danglingEdges": 0,
+      "malformedNodes": 0,
+      "malformedEdges": 0,
+      "symbolsMissingFileLevelNode": 0
+    },
+    "nodeTypes": {
+      "document": 4,
+      "config": 4,
+      "file": 36,
+      "function": 54,
+      "class": 1
+    },
+    "edgeTypes": {
+      "documents": 3,
+      "configures": 2,
+      "depends_on": 1,
+      "documents_convention_for": 4,
+      "documents_design_tokens": 1,
+      "contains": 45,
+      "uses_utility_class": 1,
+      "renders_component": 6,
+      "imports_stylesheet": 1,
+      "wraps_component": 1,
+      "exports": 10,
+      "imports": 1,
+      "uses": 1
+    },
+    "batches": {
+      "batch-1.json": {
+        "nodes": 6,
+        "edges": 6,
+        "missingFileLevelPaths": 0
+      },
+      "batch-2.json": {
+        "nodes": 70,
+        "edges": 59,
+        "missingFileLevelPaths": 0
+      },
+      "batch-3.json": {
+        "nodes": 23,
+        "edges": 12,
+        "missingFileLevelPaths": 0
+      }
+    },
+    "importMapAvailable": false
+  }
+}

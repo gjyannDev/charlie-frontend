@@ -1,0 +1,134 @@
+{
+  "batchFiles": [
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "components.json",
+      "language": "json",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 45,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Project agent guidance warning that this Next.js version has breaking changes and local docs should be checked before coding.",
+      "tags": ["agent-guidance", "nextjs", "documentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "One-line pointer that delegates Claude guidance to AGENTS.md.",
+      "tags": ["agent-guidance", "documentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Default create-next-app README covering local development, editing the app page, learning resources, and Vercel deployment.",
+      "tags": ["readme", "nextjs", "development", "deployment"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "components.json",
+      "summary": "shadcn/ui configuration for a React Server Components and TSX setup using Tailwind CSS, lucide icons, and project path aliases.",
+      "tags": ["shadcn", "tailwind", "ui", "aliases"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Node package manifest for the private Next.js app, defining dev/build/start/lint scripts and frontend dependencies.",
+      "tags": ["npm", "nextjs", "react", "dependencies"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "TypeScript configuration for a strict Next.js project with bundler resolution, React JSX, incremental builds, and @/* path aliases.",
+      "tags": ["typescript", "nextjs", "compiler", "aliases"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:CLAUDE.md",
+      "target": "document:AGENTS.md",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "document:AGENTS.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "config:tsconfig.json",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "config:components.json",
+      "target": "config:tsconfig.json",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "config:components.json",
+      "target": "config:package.json",
+      "type": "depends_on",
+      "weight": 0.6
+    }
+  ]
+}

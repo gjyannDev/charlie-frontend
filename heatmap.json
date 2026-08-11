@@ -1,0 +1,37 @@
+{
+  "entries": {
+    "\\\\?\\C:\\Users\\Ghian\\.codex\\skills\\graphify\\SKILL.md": {
+      "path": "\\\\?\\C:\\Users\\Ghian\\.codex\\skills\\graphify\\SKILL.md",
+      "access_count": 1,
+      "last_access": "2026-08-11T01:45:25.485928600+00:00",
+      "total_tokens_saved": 0,
+      "total_original_tokens": 10379,
+      "avg_compression_ratio": 0.0,
+      "agent_accesses": {
+        "local": 1
+      }
+    },
+    "\\\\?\\C:\\Users\\Ghian\\.understand-anything\\repo\\understand-anything-plugin\\skills\\understand\\SKILL.md": {
+      "path": "\\\\?\\C:\\Users\\Ghian\\.understand-anything\\repo\\understand-anything-plugin\\skills\\understand\\SKILL.md",
+      "access_count": 1,
+      "last_access": "2026-08-11T01:36:32.753701200+00:00",
+      "total_tokens_saved": 0,
+      "total_original_tokens": 11902,
+      "avg_compression_ratio": 0.0,
+      "agent_accesses": {
+        "local": 1
+      }
+    },
+    "\\\\?\\C:\\Users\\Ghian\\.codex\\skills\\lean-ctx\\SKILL.md": {
+      "path": "\\\\?\\C:\\Users\\Ghian\\.codex\\skills\\lean-ctx\\SKILL.md",
+      "access_count": 2,
+      "last_access": "2026-08-11T01:45:25.404110200+00:00",
+      "total_tokens_saved": 0,
+      "total_original_tokens": 1832,
+      "avg_compression_ratio": 0.0,
+      "agent_accesses": {
+        "local": 2
+      }
+    }
+  }
+}

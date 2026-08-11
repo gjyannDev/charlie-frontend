@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 44,
+  "totalBatches": 3,
+  "exportsByPath": {
+    ".ua/.understandignore": [],
+    "eslint.config.mjs": [],
+    "next.config.ts": [],
+    "postcss.config.mjs": [],
+    "src/app/(auth)/layout.tsx": [
+      "AdminAuthLayout"
+    ],
+    "src/app/(auth)/signin/_components/AuthForm.tsx": [
+      "AuthForm"
+    ],
+    "src/app/(auth)/signin/page.tsx": [
+      "page"
+    ],
+    "src/app/layout.tsx": [
+      "metadata",
+      "RootLayout"
+    ],
+    "src/app/page.tsx": [
+      "Home"
+    ],
+    "src/components/ui/breadcrumb.tsx": [
+      "Breadcrumb",
+      "BreadcrumbList",
+      "BreadcrumbItem",
+      "BreadcrumbLink",
+      "BreadcrumbPage",
+      "BreadcrumbSeparator",
+      "BreadcrumbEllipsis"
+    ],
+    "src/components/ui/button.tsx": [
+      "Button",
+      "buttonVariants"
+    ],
+    "src/components/ui/checkbox.tsx": [
+      "Checkbox"
+    ],
+    "src/components/ui/field.tsx": [
+      "Field",
+      "FieldLabel",
+      "FieldDescription",
+      "FieldError",
+      "FieldGroup",
+      "FieldLegend",
+      "FieldSeparator",
+      "FieldSet",
+      "FieldContent",
+      "FieldTitle"
+    ],
+    "src/components/ui/input.tsx": [
+      "Input"
+    ],
+    "src/components/ui/label.tsx": [
+      "Label"
+    ],
+    "src/components/ui/password-input.tsx": [
+      "PasswordInput"
+    ],
+    "src/components/ui/select.tsx": [
+      "Select",
+      "SelectContent",
+      "SelectGroup",
+      "SelectItem",
+      "SelectLabel",
+      "SelectScrollDownButton",
+      "SelectScrollUpButton",
+      "SelectSeparator",
+      "SelectTrigger",
+      "SelectValue"
+    ],
+    "src/components/ui/separator.tsx": [
+      "Separator"
+    ],
+    "src/components/ui/sonner.tsx": [
+      "Toaster"
+    ],
+    "src/components/ui/textarea.tsx": [
+      "Textarea"
+    ],
+    "src/components/ui/tooltip.tsx": [
+      "Tooltip",
+      "TooltipContent",
+      "TooltipProvider",
+      "TooltipTrigger"
+    ],
+    "src/lib/api/api.client.ts": [
+      "apiClient"
+    ],
+    "src/lib/api/provider.tsx": [
+      "Providers"
+    ],
+    "src/lib/api/query.client.ts": [
+      "queryClient"
+    ],
+    "src/lib/config/axios.client.ts": [
+      "API"
+    ],
+    "src/lib/font.ts": [
+      "poppins",
+      "inter"
+    ],
+    "src/lib/utils.ts": [
+      "cn"
+    ],
+    "src/shared/components/forms/CheckBoxField.tsx": [
+      "CheckboxField"
+    ],
+    "src/shared/components/forms/CheckBoxFieldWithDescription.tsx": [
+      "CheckBoxFieldWithDescription"
+    ],
+    "src/shared/components/forms/PasswordField.tsx": [
+      "PasswordField"
+    ],
+    "src/shared/components/forms/SelectField.tsx": [
+      "SelectField"
+    ],
+    "src/shared/components/forms/TextAreaField.tsx": [
+      "TextAreaField"
+    ],
+    "src/shared/components/forms/TextField.tsx": [
+      "TextField"
+    ],
+    "src/shared/ui/BreadCrumbs.tsx": [
+      "Breadcrumbs"
+    ],
+    "src/shared/utils/api.helpers.ts": [
+      "normalizeError"
+    ]
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "language": "markdown",
+          "sizeLines": 9,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "CLAUDE.md",
+          "language": "markdown",
+          "sizeLines": 1,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 36,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "components.json",
+          "language": "json",
+          "sizeLines": 25,
+          "fileCategory": "config"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 45,
+          "fileCategory": "config"
+        },
+        {
+          "path": "tsconfig.json",
+          "language": "json",
+          "sizeLines": 34,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "AGENTS.md": [],
+        "CLAUDE.md": [],
+        "README.md": [],
+        "components.json": [],
+        "package.json": [],
+        "tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": ".ua/.understandignore",
+          "language": "unknown",
+          "sizeLines": 88,
+          "fileCategory": "code"
+        },
+        {
+          "path": ".ua/config.json",
+          "language": "json",
+          "sizeLines": 3,
+          "fileCategory": "config"
+        },
+        {
+          "path": "docs/ui-conventions.md",
+          "language": "markdown",
+          "sizeLines": 84,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "eslint.config.mjs",
+          "language": "javascript",
+          "sizeLines": 18,
+          "fileCategory": "code"
+        },
+        {
+          "path": "next.config.ts",
+          "language": "typescript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "postcss.config.mjs",
+          "language": "javascript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/app/(auth)/layout.tsx",
+          "language": "typescript",
+          "sizeLines": 11,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/app/(auth)/signin/_components/AuthForm.tsx",
+          "language": "typescript",
+          "sizeLines": 98,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/app/(auth)/signin/page.tsx",
+          "language": "typescript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/app/globals.css",
+          "language": "css",
+          "sizeLines": 286,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "src/app/layout.tsx",
+          "language": "typescript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/app/page.tsx",
+          "language": "typescript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/breadcrumb.tsx",
+          "language": "typescript",
+          "sizeLines": 122,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "language": "typescript",
+          "sizeLines": 67,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "language": "typescript",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/field.tsx",
+          "language": "typescript",
+          "sizeLines": 238,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/input.tsx",
+          "language": "typescript",
+          "sizeLines": 19,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/label.tsx",
+          "language": "typescript",
+          "sizeLines": 24,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/password-input.tsx",
+          "language": "typescript",
+          "sizeLines": 42,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/select.tsx",
+          "language": "typescript",
+          "sizeLines": 192,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/separator.tsx",
+          "language": "typescript",
+          "sizeLines": 28,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/sonner.tsx",
+          "language": "typescript",
+          "sizeLines": 49,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "language": "typescript",
+          "sizeLines": 18,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "language": "typescript",
+          "sizeLines": 57,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/lib/api/api.client.ts",
+          "language": "typescript",
+          "sizeLines": 51,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".ua/.understandignore": [],
+        ".ua/config.json": [],
+        "docs/ui-conventions.md": [],
+        "eslint.config.mjs": [],
+        "next.config.ts": [],
+        "postcss.config.mjs": [],
+        "src/app/(auth)/layout.tsx": [],
+        "src/app/(auth)/signin/_components/AuthForm.tsx": [],
+        "src/app/(auth)/signin/page.tsx": [],
+        "src/app/globals.css": [],
+        "src/app/layout.tsx": [],
+        "src/app/page.tsx": [],
+        "src/components/ui/breadcrumb.tsx": [],
+        "src/components/ui/button.tsx": [],
+        "src/components/ui/checkbox.tsx": [],
+        "src/components/ui/field.tsx": [],
+        "src/components/ui/input.tsx": [],
+        "src/components/ui/label.tsx": [],
+        "src/components/ui/password-input.tsx": [],
+        "src/components/ui/select.tsx": [],
+        "src/components/ui/separator.tsx": [],
+        "src/components/ui/sonner.tsx": [],
+        "src/components/ui/textarea.tsx": [],
+        "src/components/ui/tooltip.tsx": [],
+        "src/lib/api/api.client.ts": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "src/lib/api/provider.tsx",
+          "language": "typescript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/lib/api/query.client.ts",
+          "language": "typescript",
+          "sizeLines": 11,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/lib/config/axios.client.ts",
+          "language": "typescript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/lib/font.ts",
+          "language": "typescript",
+          "sizeLines": 15,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "language": "typescript",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/components/forms/CheckBoxField.tsx",
+          "language": "typescript",
+          "sizeLines": 87,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+          "language": "typescript",
+          "sizeLines": 86,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/components/forms/PasswordField.tsx",
+          "language": "typescript",
+          "sizeLines": 52,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/components/forms/SelectField.tsx",
+          "language": "typescript",
+          "sizeLines": 157,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/components/forms/TextAreaField.tsx",
+          "language": "typescript",
+          "sizeLines": 52,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/components/forms/TextField.tsx",
+          "language": "typescript",
+          "sizeLines": 72,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/ui/BreadCrumbs.tsx",
+          "language": "typescript",
+          "sizeLines": 51,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/shared/utils/api.helpers.ts",
+          "language": "typescript",
+          "sizeLines": 51,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/lib/api/provider.tsx": [],
+        "src/lib/api/query.client.ts": [],
+        "src/lib/config/axios.client.ts": [],
+        "src/lib/font.ts": [],
+        "src/lib/utils.ts": [],
+        "src/shared/components/forms/CheckBoxField.tsx": [],
+        "src/shared/components/forms/CheckBoxFieldWithDescription.tsx": [],
+        "src/shared/components/forms/PasswordField.tsx": [],
+        "src/shared/components/forms/SelectField.tsx": [],
+        "src/shared/components/forms/TextAreaField.tsx": [],
+        "src/shared/components/forms/TextField.tsx": [],
+        "src/shared/ui/BreadCrumbs.tsx": [],
+        "src/shared/utils/api.helpers.ts": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

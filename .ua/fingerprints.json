@@ -1,0 +1,1644 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "4056d50fe1654f2f2e060c3d5637c09cbfd04161",
+  "generatedAt": "2026-08-11T01:50:39.399Z",
+  "files": {
+    ".ua/.understandignore": {
+      "filePath": ".ua/.understandignore",
+      "contentHash": "d6d504d8ec530707afbbc35b5a0f50e828efaf05299b54717630500731c54f45",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 89,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/config.json": {
+      "filePath": ".ua/config.json",
+      "contentHash": "08d37f20ea0af2233ae24f094723759f952381ecb6dd7f2aaa05ef96e95eae6b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "AGENTS.md": {
+      "filePath": "AGENTS.md",
+      "contentHash": "63f2c50380ed6303237cce215ce27af1d620d094c215e28d1b1538a3c070e3bb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "CLAUDE.md": {
+      "filePath": "CLAUDE.md",
+      "contentHash": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": true
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    "components.json": {
+      "filePath": "components.json",
+      "contentHash": "a7720c54d6a109d6063937fac1c7766c44a1020cdbe43eb489ca2cb126fbbaa9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "docs/ui-conventions.md": {
+      "filePath": "docs/ui-conventions.md",
+      "contentHash": "578f6876218d780285b2b5f229441c815139c0ffd2c97df57b09b3e3281b159b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "eslint.config.mjs": {
+      "filePath": "eslint.config.mjs",
+      "contentHash": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "eslint/config",
+          "specifiers": [
+            "defineConfig",
+            "globalIgnores"
+          ]
+        },
+        {
+          "source": "eslint-config-next/core-web-vitals",
+          "specifiers": [
+            "nextVitals"
+          ]
+        },
+        {
+          "source": "eslint-config-next/typescript",
+          "specifiers": [
+            "nextTs"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "next.config.ts": {
+      "filePath": "next.config.ts",
+      "contentHash": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next",
+          "specifiers": [
+            "NextConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "f1dfa9e0131371a637a061b3fb75033937290f03a2bcd908ccb41982a5144c68",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "postcss.config.mjs": {
+      "filePath": "postcss.config.mjs",
+      "contentHash": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/(auth)/layout.tsx": {
+      "filePath": "src/app/(auth)/layout.tsx",
+      "contentHash": "6f23daa5e517eca9022d8d8628182eceab24d693c52c104b858b875af474b3e5",
+      "functions": [
+        {
+          "name": "AdminAuthLayout",
+          "params": [
+            "{ children }"
+          ],
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "ReactNode"
+          ]
+        }
+      ],
+      "exports": [
+        "AdminAuthLayout"
+      ],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/(auth)/signin/_components/AuthForm.tsx": {
+      "filePath": "src/app/(auth)/signin/_components/AuthForm.tsx",
+      "contentHash": "33ff57663b91f670f0c23c50de226732bf8cb4e50b5a57f98d6f25fd1c238a3e",
+      "functions": [
+        {
+          "name": "AuthForm",
+          "params": [
+            "{\r\n  schema,\r\n  onSubmit,\r\n  defaultValues,\r\n  isSubmittingExternal,\r\n  // eslint-disable-next-line @typescript-eslint/no-unused-vars\r\n  showForgotPasswordLink = true,\r\n  // eslint-disable-next-line @typescript-eslint/no-unused-vars\r\n  forgotPasswordHref = \"/password/forgot\",\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 74
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "@/components/ui/field",
+          "specifiers": [
+            "FieldGroup",
+            "FieldSet"
+          ]
+        },
+        {
+          "source": "@/shared/components/forms/PasswordField",
+          "specifiers": [
+            "PasswordField"
+          ]
+        },
+        {
+          "source": "@/shared/components/forms/TextField",
+          "specifiers": [
+            "TextField"
+          ]
+        },
+        {
+          "source": "@hookform/resolvers/zod",
+          "specifiers": [
+            "zodResolver"
+          ]
+        },
+        {
+          "source": "react-hook-form",
+          "specifiers": [
+            "Resolver",
+            "SubmitHandler",
+            "useForm"
+          ]
+        },
+        {
+          "source": "zod",
+          "specifiers": [
+            "z"
+          ]
+        }
+      ],
+      "exports": [
+        "AuthForm"
+      ],
+      "totalLines": 99,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/(auth)/signin/page.tsx": {
+      "filePath": "src/app/(auth)/signin/page.tsx",
+      "contentHash": "763b8738b252eabe36f3a0da257a66bcf917837e643036a5eddd54d7ca2fc2d2",
+      "functions": [
+        {
+          "name": "page",
+          "params": [],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "page"
+      ],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/globals.css": {
+      "filePath": "src/app/globals.css",
+      "contentHash": "1ab5ca362478b351fc73fe46113c91b4c74f40ce6353b127dfa7d011b02327c8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 287,
+      "hasStructuralAnalysis": false
+    },
+    "src/app/layout.tsx": {
+      "filePath": "src/app/layout.tsx",
+      "contentHash": "67effec41456cb44761147b709b82783e3c81c5d852a62797fd6799b217fd3a7",
+      "functions": [
+        {
+          "name": "RootLayout",
+          "params": [
+            "{ children }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next",
+          "specifiers": [
+            "Metadata"
+          ]
+        },
+        {
+          "source": "./globals.css",
+          "specifiers": []
+        },
+        {
+          "source": "@/lib/font",
+          "specifiers": [
+            "inter",
+            "poppins"
+          ]
+        },
+        {
+          "source": "@/lib/api/provider",
+          "specifiers": [
+            "Providers"
+          ]
+        }
+      ],
+      "exports": [
+        "metadata",
+        "RootLayout"
+      ],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/page.tsx": {
+      "filePath": "src/app/page.tsx",
+      "contentHash": "80a9372bf02fcaebe0eafd3fada3f7f9c88018e2eae787f8ea0fc62148c2206d",
+      "functions": [
+        {
+          "name": "Home",
+          "params": [],
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "Home"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/breadcrumb.tsx": {
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "contentHash": "785212482c3b4702abf9bc08af0490f3734e594997e3554e5195328a7ddcd70d",
+      "functions": [
+        {
+          "name": "Breadcrumb",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "BreadcrumbList",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "BreadcrumbItem",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "BreadcrumbLink",
+          "params": [
+            "{\n  asChild,\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 17
+        },
+        {
+          "name": "BreadcrumbPage",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "BreadcrumbSeparator",
+          "params": [
+            "{\n  children,\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 19
+        },
+        {
+          "name": "BreadcrumbEllipsis",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "radix-ui",
+          "specifiers": [
+            "Slot"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "ChevronRightIcon",
+            "MoreHorizontalIcon"
+          ]
+        }
+      ],
+      "exports": [
+        "Breadcrumb",
+        "BreadcrumbList",
+        "BreadcrumbItem",
+        "BreadcrumbLink",
+        "BreadcrumbPage",
+        "BreadcrumbSeparator",
+        "BreadcrumbEllipsis"
+      ],
+      "totalLines": 123,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/button.tsx": {
+      "filePath": "src/components/ui/button.tsx",
+      "contentHash": "9ce417985b97956fbb3a73c84b0eb60230fd0a9844c5111df92e061731440a3f",
+      "functions": [
+        {
+          "name": "Button",
+          "params": [
+            "{\n  className,\n  variant = \"default\",\n  size = \"default\",\n  asChild = false,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 22
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "class-variance-authority",
+          "specifiers": [
+            "cva",
+            "VariantProps"
+          ]
+        },
+        {
+          "source": "radix-ui",
+          "specifiers": [
+            "Slot"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Button",
+        "buttonVariants"
+      ],
+      "totalLines": 68,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/checkbox.tsx": {
+      "filePath": "src/components/ui/checkbox.tsx",
+      "contentHash": "fb1ee2e329aa400f44d8983e689d595f2fe5556d13844c6676be330cd71c02e3",
+      "functions": [
+        {
+          "name": "Checkbox",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 23
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "radix-ui",
+          "specifiers": [
+            "CheckboxPrimitive"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "CheckIcon"
+          ]
+        }
+      ],
+      "exports": [
+        "Checkbox"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/field.tsx": {
+      "filePath": "src/components/ui/field.tsx",
+      "contentHash": "76e008459f847a96bb1140c11a38d247e69392432a1e690aa660fdb4844f5c74",
+      "functions": [
+        {
+          "name": "FieldSet",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "FieldLegend",
+          "params": [
+            "{\n  className,\n  variant = \"legend\",\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 17
+        },
+        {
+          "name": "FieldGroup",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "Field",
+          "params": [
+            "{\n  className,\n  orientation = \"vertical\",\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 15
+        },
+        {
+          "name": "FieldContent",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "FieldLabel",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 16
+        },
+        {
+          "name": "FieldTitle",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "FieldDescription",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 14
+        },
+        {
+          "name": "FieldSeparator",
+          "params": [
+            "{\n  children,\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 29
+        },
+        {
+          "name": "FieldError",
+          "params": [
+            "{\n  className,\n  children,\n  errors,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 50
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useMemo"
+          ]
+        },
+        {
+          "source": "class-variance-authority",
+          "specifiers": [
+            "cva",
+            "VariantProps"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        },
+        {
+          "source": "@/components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "@/components/ui/separator",
+          "specifiers": [
+            "Separator"
+          ]
+        }
+      ],
+      "exports": [
+        "Field",
+        "FieldLabel",
+        "FieldDescription",
+        "FieldError",
+        "FieldGroup",
+        "FieldLegend",
+        "FieldSeparator",
+        "FieldSet",
+        "FieldContent",
+        "FieldTitle"
+      ],
+      "totalLines": 239,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/input.tsx": {
+      "filePath": "src/components/ui/input.tsx",
+      "contentHash": "c4902a8c4967875e30d9f1198175f4f5348a0cdd17e21b5e3d7c9e81d2996ed9",
+      "functions": [
+        {
+          "name": "Input",
+          "params": [
+            "{ className, type, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Input"
+      ],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/label.tsx": {
+      "filePath": "src/components/ui/label.tsx",
+      "contentHash": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c",
+      "functions": [
+        {
+          "name": "Label",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 15
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "radix-ui",
+          "specifiers": [
+            "LabelPrimitive"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Label"
+      ],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/password-input.tsx": {
+      "filePath": "src/components/ui/password-input.tsx",
+      "contentHash": "765e981db2f97ba6f636b294fae7c131df489b1c8f1a6f6ce28c81795701bc5f",
+      "functions": [
+        {
+          "name": "PasswordInput",
+          "params": [
+            "{\r\n  className,\r\n  ...props\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 36
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "EyeIcon",
+            "EyeOffIcon"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "PasswordInput"
+      ],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/select.tsx": {
+      "filePath": "src/components/ui/select.tsx",
+      "contentHash": "c1295c1404b67895549b89225885eba08198a5d6224c733fbb8964eaaa2edff4",
+      "functions": [
+        {
+          "name": "Select",
+          "params": [
+            "{\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "SelectGroup",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "SelectValue",
+          "params": [
+            "{\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "SelectTrigger",
+          "params": [
+            "{\n  className,\n  size = \"default\",\n  children,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 25
+        },
+        {
+          "name": "SelectContent",
+          "params": [
+            "{\n  className,\n  children,\n  position = \"item-aligned\",\n  align = \"center\",\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 32
+        },
+        {
+          "name": "SelectLabel",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "SelectItem",
+          "params": [
+            "{\n  className,\n  children,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "SelectSeparator",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "radix-ui",
+          "specifiers": [
+            "SelectPrimitive"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "ChevronDownIcon",
+            "CheckIcon",
+            "ChevronUpIcon"
+          ]
+        }
+      ],
+      "exports": [
+        "Select",
+        "SelectContent",
+        "SelectGroup",
+        "SelectItem",
+        "SelectLabel",
+        "SelectScrollDownButton",
+        "SelectScrollUpButton",
+        "SelectSeparator",
+        "SelectTrigger",
+        "SelectValue"
+      ],
+      "totalLines": 193,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/separator.tsx": {
+      "filePath": "src/components/ui/separator.tsx",
+      "contentHash": "c924a82e99fda03684c17238d04eec857edc83977da2ee601795e94e52b4828f",
+      "functions": [
+        {
+          "name": "Separator",
+          "params": [
+            "{\n  className,\n  orientation = \"horizontal\",\n  decorative = true,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 19
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "radix-ui",
+          "specifiers": [
+            "SeparatorPrimitive"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Separator"
+      ],
+      "totalLines": 29,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/sonner.tsx": {
+      "filePath": "src/components/ui/sonner.tsx",
+      "contentHash": "2dd975ad2170ba2570b00e58713dcbda90f26a7fffdaceb1ef7255f450c2d2a6",
+      "functions": [
+        {
+          "name": "Toaster",
+          "params": [
+            "{ ...props }"
+          ],
+          "exported": true,
+          "lineCount": 41
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next-themes",
+          "specifiers": [
+            "useTheme"
+          ]
+        },
+        {
+          "source": "sonner",
+          "specifiers": [
+            "Sonner",
+            "ToasterProps"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "CircleCheckIcon",
+            "InfoIcon",
+            "TriangleAlertIcon",
+            "OctagonXIcon",
+            "Loader2Icon"
+          ]
+        }
+      ],
+      "exports": [
+        "Toaster"
+      ],
+      "totalLines": 50,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/textarea.tsx": {
+      "filePath": "src/components/ui/textarea.tsx",
+      "contentHash": "58b58d84fc54ba5f4ca46937870c619349fd9eccc4d494250ac7bc73a94e05e9",
+      "functions": [
+        {
+          "name": "Textarea",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Textarea"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/tooltip.tsx": {
+      "filePath": "src/components/ui/tooltip.tsx",
+      "contentHash": "f26881e08ed65a973a15ac3bd509bca50c31da1d5b275bc3f9c48b5de1d1c966",
+      "functions": [
+        {
+          "name": "TooltipProvider",
+          "params": [
+            "{\n  delayDuration = 0,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "Tooltip",
+          "params": [
+            "{\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "TooltipTrigger",
+          "params": [
+            "{\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "TooltipContent",
+          "params": [
+            "{\n  className,\n  sideOffset = 0,\n  children,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 23
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "radix-ui",
+          "specifiers": [
+            "TooltipPrimitive"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Tooltip",
+        "TooltipContent",
+        "TooltipProvider",
+        "TooltipTrigger"
+      ],
+      "totalLines": 58,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/api/api.client.ts": {
+      "filePath": "src/lib/api/api.client.ts",
+      "contentHash": "c408d0515aff3b5fd9b712907fdab9bc832df66d955dc8a32a3b53f9e44fbdc3",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ApiClient",
+          "methods": [
+            "defaults",
+            "get",
+            "post",
+            "put",
+            "patch",
+            "delete",
+            "downloadBlob"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 40
+        }
+      ],
+      "imports": [
+        {
+          "source": "@/lib/config/axios.client",
+          "specifiers": [
+            "API"
+          ]
+        },
+        {
+          "source": "axios",
+          "specifiers": [
+            "AxiosDefaults"
+          ]
+        }
+      ],
+      "exports": [
+        "apiClient"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/api/provider.tsx": {
+      "filePath": "src/lib/api/provider.tsx",
+      "contentHash": "bd667ff256608e0f31dac93f07f71aa84ebf31e83d003cde86ff331f931a531d",
+      "functions": [
+        {
+          "name": "Providers",
+          "params": [
+            "{ children }"
+          ],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@tanstack/react-query",
+          "specifiers": [
+            "QueryClientProvider"
+          ]
+        },
+        {
+          "source": "@/lib/api/query.client",
+          "specifiers": [
+            "queryClient"
+          ]
+        },
+        {
+          "source": "@/components/ui/sonner",
+          "specifiers": [
+            "Toaster"
+          ]
+        }
+      ],
+      "exports": [
+        "Providers"
+      ],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/api/query.client.ts": {
+      "filePath": "src/lib/api/query.client.ts",
+      "contentHash": "dfc02b8c7e3666e2a1ce8795f929fe3189993139d051e0a156c01f14e8810368",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@tanstack/react-query",
+          "specifiers": [
+            "QueryClient"
+          ]
+        }
+      ],
+      "exports": [
+        "queryClient"
+      ],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/config/axios.client.ts": {
+      "filePath": "src/lib/config/axios.client.ts",
+      "contentHash": "3f328ceeb9cbfd5df6b99f742787db710967906bbd13f1d9ee15f7d82496d479",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [
+        "API"
+      ],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/font.ts": {
+      "filePath": "src/lib/font.ts",
+      "contentHash": "a16358116d0de03d477a2b5d5cce0db73e98841c13cb9d5ed54599abdc29f639",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next/font/google",
+          "specifiers": [
+            "Manrope",
+            "Inter"
+          ]
+        }
+      ],
+      "exports": [
+        "poppins",
+        "inter"
+      ],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/utils.ts": {
+      "filePath": "src/lib/utils.ts",
+      "contentHash": "c0adf27efbfa148d5abcf99e860f8e3e6c8fc77a1f99e023c08ef4f12e6ece29",
+      "functions": [
+        {
+          "name": "cn",
+          "params": [
+            "...inputs"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "clsx",
+          "specifiers": [
+            "clsx",
+            "ClassValue"
+          ]
+        },
+        {
+          "source": "tailwind-merge",
+          "specifiers": [
+            "twMerge"
+          ]
+        }
+      ],
+      "exports": [
+        "cn"
+      ],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/components/forms/CheckBoxField.tsx": {
+      "filePath": "src/shared/components/forms/CheckBoxField.tsx",
+      "contentHash": "66baa4b91fdaf5474217ff0ffac083915f918f26f7861ae948bd14a224b8cd67",
+      "functions": [
+        {
+          "name": "CheckboxField",
+          "params": [
+            "{\r\n  name,\r\n  control,\r\n  label,\r\n  description,\r\n  error,\r\n  id,\r\n  className,\r\n  checkboxClassName,\r\n  labelClassName,\r\n  descriptionClassName,\r\n  hideLabel = false,\r\n  disabled,\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 60
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react-hook-form",
+          "specifiers": [
+            "Controller",
+            "Control",
+            "FieldValues",
+            "Path"
+          ]
+        },
+        {
+          "source": "@/components/ui/checkbox",
+          "specifiers": [
+            "Checkbox"
+          ]
+        },
+        {
+          "source": "@/components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "@/components/ui/field",
+          "specifiers": [
+            "FieldError"
+          ]
+        }
+      ],
+      "exports": [
+        "CheckboxField"
+      ],
+      "totalLines": 88,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/components/forms/CheckBoxFieldWithDescription.tsx": {
+      "filePath": "src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "contentHash": "d558c8ba5bcd8b2afe2ac403c020c01653445252a962a8b8d998b9fc46432f0b",
+      "functions": [
+        {
+          "name": "CheckBoxFieldWithDescription",
+          "params": [
+            "{\r\n  name,\r\n  label,\r\n  checkboxLabel,\r\n  description,\r\n  control,\r\n  error,\r\n  disabled,\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 66
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/checkbox",
+          "specifiers": [
+            "Checkbox"
+          ]
+        },
+        {
+          "source": "@/components/ui/field",
+          "specifiers": [
+            "Field",
+            "FieldError",
+            "FieldLabel"
+          ]
+        },
+        {
+          "source": "@/components/ui/label",
+          "specifiers": [
+            "Label"
+          ]
+        },
+        {
+          "source": "react-hook-form",
+          "specifiers": [
+            "Controller",
+            "Control",
+            "FieldValues",
+            "Path"
+          ]
+        }
+      ],
+      "exports": [
+        "CheckBoxFieldWithDescription"
+      ],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/components/forms/PasswordField.tsx": {
+      "filePath": "src/shared/components/forms/PasswordField.tsx",
+      "contentHash": "b1f5cf72999a048756d9f09635c4267433ddb44fa1f898f90803aef313990c4f",
+      "functions": [
+        {
+          "name": "PasswordField",
+          "params": [
+            "{\r\n  name,\r\n  label,\r\n  placeholder,\r\n  autoComplete,\r\n  register,\r\n  registerOptions,\r\n  error,\r\n  disabled,\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 32
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/field",
+          "specifiers": [
+            "Field",
+            "FieldError",
+            "FieldLabel"
+          ]
+        },
+        {
+          "source": "@/components/ui/password-input",
+          "specifiers": [
+            "PasswordInput"
+          ]
+        },
+        {
+          "source": "react-hook-form",
+          "specifiers": [
+            "FieldValues",
+            "Path",
+            "RegisterOptions",
+            "UseFormRegister"
+          ]
+        }
+      ],
+      "exports": [
+        "PasswordField"
+      ],
+      "totalLines": 53,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/components/forms/SelectField.tsx": {
+      "filePath": "src/shared/components/forms/SelectField.tsx",
+      "contentHash": "80a2957b1b7c0ec0990a97ff164ecaf19edd05a5fe4a19ab74dcf4637dd494ad",
+      "functions": [
+        {
+          "name": "SelectField",
+          "params": [
+            "{\r\n  name,\r\n  label,\r\n  control,\r\n  placeholder = \"Select option\",\r\n  description,\r\n  options,\r\n  error,\r\n  className,\r\n  triggerClassName,\r\n  width,\r\n  fullWidth = false,\r\n  isClearable = false,\r\n  showTooltip = false,\r\n  onValueChange,\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 108
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/field",
+          "specifiers": [
+            "Field",
+            "FieldDescription",
+            "FieldError",
+            "FieldLabel"
+          ]
+        },
+        {
+          "source": "@/components/ui/select",
+          "specifiers": [
+            "Select",
+            "SelectContent",
+            "SelectItem",
+            "SelectTrigger",
+            "SelectValue"
+          ]
+        },
+        {
+          "source": "@/components/ui/tooltip",
+          "specifiers": [
+            "Tooltip",
+            "TooltipContent",
+            "TooltipTrigger"
+          ]
+        },
+        {
+          "source": "react-hook-form",
+          "specifiers": [
+            "Controller",
+            "Control",
+            "FieldValues",
+            "Path"
+          ]
+        }
+      ],
+      "exports": [
+        "SelectField"
+      ],
+      "totalLines": 158,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/components/forms/TextAreaField.tsx": {
+      "filePath": "src/shared/components/forms/TextAreaField.tsx",
+      "contentHash": "738b87b85969db147025386b88119223c8475755b7f70b7d3925968dff6b7514",
+      "functions": [
+        {
+          "name": "TextAreaField",
+          "params": [
+            "{\r\n  name,\r\n  label,\r\n  description,\r\n  placeholder,\r\n  rows = 4,\r\n  disabled,\r\n  register,\r\n  error,\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 32
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/field",
+          "specifiers": [
+            "Field",
+            "FieldDescription",
+            "FieldError",
+            "FieldLabel"
+          ]
+        },
+        {
+          "source": "@/components/ui/textarea",
+          "specifiers": [
+            "Textarea"
+          ]
+        },
+        {
+          "source": "react-hook-form",
+          "specifiers": [
+            "FieldValues",
+            "Path",
+            "UseFormRegister"
+          ]
+        }
+      ],
+      "exports": [
+        "TextAreaField"
+      ],
+      "totalLines": 53,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/components/forms/TextField.tsx": {
+      "filePath": "src/shared/components/forms/TextField.tsx",
+      "contentHash": "6c7150addfc51de11af4fc8c8120ddc53fa61b43f067fa741cff4800b7729b25",
+      "functions": [
+        {
+          "name": "TextField",
+          "params": [
+            "{\r\n  name,\r\n  label,\r\n  description,\r\n  required,\r\n  placeholder,\r\n  type = \"text\",\r\n  step,\r\n  min,\r\n  inputMode,\r\n  register,\r\n  registerOptions,\r\n  error,\r\n  autoComplete,\r\n  disabled,\r\n  className,\r\n}"
+          ],
+          "exported": true,
+          "lineCount": 43
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/field",
+          "specifiers": [
+            "Field",
+            "FieldError",
+            "FieldLabel"
+          ]
+        },
+        {
+          "source": "@/components/ui/input",
+          "specifiers": [
+            "Input"
+          ]
+        },
+        {
+          "source": "react-hook-form",
+          "specifiers": [
+            "FieldValues",
+            "Path",
+            "RegisterOptions",
+            "UseFormRegister"
+          ]
+        }
+      ],
+      "exports": [
+        "TextField"
+      ],
+      "totalLines": 73,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/ui/BreadCrumbs.tsx": {
+      "filePath": "src/shared/ui/BreadCrumbs.tsx",
+      "contentHash": "ea839c290887575699f7ddb61ce1c7d46f9979b1d14232f2f8a862a3defd119b",
+      "functions": [
+        {
+          "name": "Breadcrumbs",
+          "params": [
+            "{ items }"
+          ],
+          "exported": true,
+          "lineCount": 30
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "next/link",
+          "specifiers": [
+            "Link"
+          ]
+        },
+        {
+          "source": "@/components/ui/breadcrumb",
+          "specifiers": [
+            "Breadcrumb",
+            "BreadcrumbItem",
+            "BreadcrumbLink",
+            "BreadcrumbList",
+            "BreadcrumbPage",
+            "BreadcrumbSeparator"
+          ]
+        }
+      ],
+      "exports": [
+        "Breadcrumbs"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "src/shared/utils/api.helpers.ts": {
+      "filePath": "src/shared/utils/api.helpers.ts",
+      "contentHash": "b29f84f46b7d24e24675c5e38a686784575133504fbf843f694b95793116fdfb",
+      "functions": [
+        {
+          "name": "normalizeError",
+          "params": [
+            "error"
+          ],
+          "returnType": "NormalizedError",
+          "exported": true,
+          "lineCount": 44
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [
+        "normalizeError"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "contentHash": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

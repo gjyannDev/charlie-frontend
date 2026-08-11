@@ -1,0 +1,34 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'file:.ua/.understandignore' has no edges (orphan)",
+    "Node 'config:.ua/config.json' has no edges (orphan)",
+    "Node 'file:eslint.config.mjs' has no edges (orphan)",
+    "Node 'file:next.config.ts' has no edges (orphan)",
+    "Node 'file:postcss.config.mjs' has no edges (orphan)",
+    "Node 'file:src/lib/config/axios.client.ts' has no edges (orphan)",
+    "Node 'file:src/lib/font.ts' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 99,
+    "totalEdges": 77,
+    "totalLayers": 7,
+    "tourSteps": 6,
+    "nodeTypes": {
+      "document": 4,
+      "config": 4,
+      "file": 36,
+      "function": 54,
+      "class": 1
+    },
+    "edgeTypes": {
+      "documents": 8,
+      "configures": 2,
+      "depends_on": 3,
+      "contains": 45,
+      "calls": 7,
+      "imports": 2,
+      "exports": 10
+    }
+  }
+}

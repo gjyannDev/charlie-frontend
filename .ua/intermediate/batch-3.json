@@ -1,0 +1,365 @@
+{
+  "batchFiles": [
+    {
+      "path": "src/lib/api/provider.tsx",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/api/query.client.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/config/axios.client.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/font.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/components/forms/CheckBoxField.tsx",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "language": "typescript",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/components/forms/PasswordField.tsx",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/components/forms/SelectField.tsx",
+      "language": "typescript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/components/forms/TextAreaField.tsx",
+      "language": "typescript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/components/forms/TextField.tsx",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/ui/BreadCrumbs.tsx",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/shared/utils/api.helpers.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "file:src/lib/api/provider.tsx",
+      "type": "file",
+      "name": "provider.tsx",
+      "filePath": "src/lib/api/provider.tsx",
+      "summary": "Client-side app provider that wraps children with React Query and global toast UI.",
+      "tags": ["react", "provider", "react-query", "toast"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/api/provider.tsx:Providers",
+      "type": "function",
+      "name": "Providers",
+      "filePath": "src/lib/api/provider.tsx",
+      "summary": "Exports a React component that provides QueryClient context and renders the Toaster.",
+      "tags": ["react-component", "provider", "react-query"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/api/query.client.ts",
+      "type": "file",
+      "name": "query.client.ts",
+      "filePath": "src/lib/api/query.client.ts",
+      "summary": "Configures the shared TanStack Query client with default query caching and retry behavior.",
+      "tags": ["react-query", "client-config", "data-fetching"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/config/axios.client.ts",
+      "type": "file",
+      "name": "axios.client.ts",
+      "filePath": "src/lib/config/axios.client.ts",
+      "summary": "Creates the shared Axios API client with base URL, credentials, timeout, and JSON accept header.",
+      "tags": ["axios", "api-client", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/font.ts",
+      "type": "file",
+      "name": "font.ts",
+      "filePath": "src/lib/font.ts",
+      "summary": "Defines Manrope and Inter font instances for Next.js font optimization.",
+      "tags": ["fonts", "next-font", "theme"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Provides a Tailwind-aware class name merge helper.",
+      "tags": ["utilities", "classnames", "tailwind"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Combines clsx conditional classes and tailwind-merge conflict resolution.",
+      "tags": ["utility-function", "classnames", "tailwind"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/components/forms/CheckBoxField.tsx",
+      "type": "file",
+      "name": "CheckBoxField.tsx",
+      "filePath": "src/shared/components/forms/CheckBoxField.tsx",
+      "summary": "Reusable controlled checkbox form field with optional label, description, error, and hide-label mode.",
+      "tags": ["form", "checkbox", "react-hook-form", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/components/forms/CheckBoxField.tsx:CheckboxField",
+      "type": "function",
+      "name": "CheckboxField",
+      "filePath": "src/shared/components/forms/CheckBoxField.tsx",
+      "summary": "Exports a generic React Hook Form checkbox component with boolean coercion and optional display text.",
+      "tags": ["react-component", "form-field", "checkbox", "generic"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "type": "file",
+      "name": "CheckBoxFieldWithDescription.tsx",
+      "filePath": "src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "summary": "Reusable controlled checkbox card field with label, checkbox label, description, disabled state, and error rendering.",
+      "tags": ["form", "checkbox", "description", "react-hook-form"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/components/forms/CheckBoxFieldWithDescription.tsx:CheckBoxFieldWithDescription",
+      "type": "function",
+      "name": "CheckBoxFieldWithDescription",
+      "filePath": "src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "summary": "Exports a React Hook Form checkbox component styled as a descriptive selectable row.",
+      "tags": ["react-component", "form-field", "checkbox", "description"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/components/forms/PasswordField.tsx",
+      "type": "file",
+      "name": "PasswordField.tsx",
+      "filePath": "src/shared/components/forms/PasswordField.tsx",
+      "summary": "Reusable password input field that registers with React Hook Form and displays validation errors.",
+      "tags": ["form", "password", "react-hook-form", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/shared/components/forms/PasswordField.tsx:PasswordField",
+      "type": "function",
+      "name": "PasswordField",
+      "filePath": "src/shared/components/forms/PasswordField.tsx",
+      "summary": "Exports a generic password field component with label, autocomplete, disabled state, and register options.",
+      "tags": ["react-component", "form-field", "password", "generic"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/components/forms/SelectField.tsx",
+      "type": "file",
+      "name": "SelectField.tsx",
+      "filePath": "src/shared/components/forms/SelectField.tsx",
+      "summary": "Reusable controlled select field with optional clear value, tooltip, width controls, description, and error display.",
+      "tags": ["form", "select", "react-hook-form", "tooltip"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/shared/components/forms/SelectField.tsx:SelectField",
+      "type": "function",
+      "name": "SelectField",
+      "filePath": "src/shared/components/forms/SelectField.tsx",
+      "summary": "Exports a generic React Hook Form select component that maps string options to string, number, or undefined values.",
+      "tags": ["react-component", "form-field", "select", "generic", "value-conversion"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/shared/components/forms/TextAreaField.tsx",
+      "type": "file",
+      "name": "TextAreaField.tsx",
+      "filePath": "src/shared/components/forms/TextAreaField.tsx",
+      "summary": "Reusable textarea field with label, description, row count, disabled state, and error rendering.",
+      "tags": ["form", "textarea", "react-hook-form", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/shared/components/forms/TextAreaField.tsx:TextAreaField",
+      "type": "function",
+      "name": "TextAreaField",
+      "filePath": "src/shared/components/forms/TextAreaField.tsx",
+      "summary": "Exports a generic registered textarea component for React Hook Form forms.",
+      "tags": ["react-component", "form-field", "textarea", "generic"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/shared/components/forms/TextField.tsx",
+      "type": "file",
+      "name": "TextField.tsx",
+      "filePath": "src/shared/components/forms/TextField.tsx",
+      "summary": "Reusable registered text input field with numeric input support, description, required marker, and error rendering.",
+      "tags": ["form", "input", "react-hook-form", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/components/forms/TextField.tsx:TextField",
+      "type": "function",
+      "name": "TextField",
+      "filePath": "src/shared/components/forms/TextField.tsx",
+      "summary": "Exports a generic text input component with React Hook Form registration and optional number-specific attributes.",
+      "tags": ["react-component", "form-field", "input", "generic"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/ui/BreadCrumbs.tsx",
+      "type": "file",
+      "name": "BreadCrumbs.tsx",
+      "filePath": "src/shared/ui/BreadCrumbs.tsx",
+      "summary": "Reusable breadcrumb navigation component that renders linked intermediate crumbs and a current page crumb.",
+      "tags": ["navigation", "breadcrumbs", "next-link", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/ui/BreadCrumbs.tsx:Breadcrumbs",
+      "type": "function",
+      "name": "Breadcrumbs",
+      "filePath": "src/shared/ui/BreadCrumbs.tsx",
+      "summary": "Exports a breadcrumb list component with optional link click handlers and last-item page rendering.",
+      "tags": ["react-component", "navigation", "breadcrumbs"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/shared/utils/api.helpers.ts",
+      "type": "file",
+      "name": "api.helpers.ts",
+      "filePath": "src/shared/utils/api.helpers.ts",
+      "summary": "Normalizes unknown thrown values and Axios errors into Error objects with status and original error metadata.",
+      "tags": ["api", "errors", "axios", "utility"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/shared/utils/api.helpers.ts:normalizeError",
+      "type": "function",
+      "name": "normalizeError",
+      "filePath": "src/shared/utils/api.helpers.ts",
+      "summary": "Exports an error normalization helper that extracts messages and HTTP status from Axios or generic errors.",
+      "tags": ["utility-function", "error-handling", "axios", "api"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/api/provider.tsx",
+      "target": "function:src/lib/api/provider.tsx:Providers",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/api/provider.tsx",
+      "target": "file:src/lib/api/query.client.ts",
+      "type": "imports",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/lib/api/provider.tsx:Providers",
+      "target": "file:src/lib/api/query.client.ts",
+      "type": "uses",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/utils.ts",
+      "target": "function:src/lib/utils.ts:cn",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/components/forms/CheckBoxField.tsx",
+      "target": "function:src/shared/components/forms/CheckBoxField.tsx:CheckboxField",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/components/forms/CheckBoxFieldWithDescription.tsx",
+      "target": "function:src/shared/components/forms/CheckBoxFieldWithDescription.tsx:CheckBoxFieldWithDescription",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/components/forms/PasswordField.tsx",
+      "target": "function:src/shared/components/forms/PasswordField.tsx:PasswordField",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/components/forms/SelectField.tsx",
+      "target": "function:src/shared/components/forms/SelectField.tsx:SelectField",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/components/forms/TextAreaField.tsx",
+      "target": "function:src/shared/components/forms/TextAreaField.tsx:TextAreaField",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/components/forms/TextField.tsx",
+      "target": "function:src/shared/components/forms/TextField.tsx:TextField",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/ui/BreadCrumbs.tsx",
+      "target": "function:src/shared/ui/BreadCrumbs.tsx:Breadcrumbs",
+      "type": "exports",
+      "weight": 1
+    },
+    {
+      "source": "file:src/shared/utils/api.helpers.ts",
+      "target": "function:src/shared/utils/api.helpers.ts:normalizeError",
+      "type": "exports",
+      "weight": 1
+    }
+  ]
+}
