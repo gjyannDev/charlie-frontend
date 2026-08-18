@@ -1,0 +1,267 @@
+{
+  ".ua/tmp/read-file.cjs": {
+    "mtime": 1786412680.9166422,
+    "ast_hash": "a97f30a12cb1333f42815cf7a4aeb221",
+    "semantic_hash": ""
+  },
+  ".ua/tmp/ua-finalize.cjs": {
+    "mtime": 1786412871.228401,
+    "ast_hash": "271dd2de8c38af1120869c343d1ce470",
+    "semantic_hash": ""
+  },
+  ".ua/tmp/ua-fingerprint-input.cjs": {
+    "mtime": 1786413018.9592319,
+    "ast_hash": "adf270fe066fea8dc2811ce3955b705c",
+    "semantic_hash": ""
+  },
+  ".ua/tmp/ua-inline-validate.cjs": {
+    "mtime": 1786412991.239147,
+    "ast_hash": "ddc2a6872d6c2c825335c0ed887e87c9",
+    "semantic_hash": ""
+  },
+  ".ua/tmp/ua-stats.cjs": {
+    "mtime": 1786412545.8599002,
+    "ast_hash": "c422e3c24758f2d8aabe853db479fdab",
+    "semantic_hash": ""
+  },
+  ".ua/tmp/ua-summary.cjs": {
+    "mtime": 1786413103.8677754,
+    "ast_hash": "15c07a044aa0d29403dd7a9d81db93f6",
+    "semantic_hash": ""
+  },
+  ".ua/tmp/ua-write-meta.cjs": {
+    "mtime": 1786413050.854223,
+    "ast_hash": "c1e1c1df996bc35f7f254715b8064030",
+    "semantic_hash": ""
+  },
+  "components.json": {
+    "mtime": 1786190315.2664156,
+    "ast_hash": "f9b838065323828efd209f38da0e25f2",
+    "semantic_hash": ""
+  },
+  "eslint.config.mjs": {
+    "mtime": 1786187757.6665368,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": ""
+  },
+  "next.config.ts": {
+    "mtime": 1786187758.0172393,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1786200238.9138827,
+    "ast_hash": "cdc7f9e4bd8625c27818fca857ded7d8",
+    "semantic_hash": ""
+  },
+  "postcss.config.mjs": {
+    "mtime": 1786187757.7892232,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": ""
+  },
+  "src/app/(auth)/layout.tsx": {
+    "mtime": 1786245375.8523517,
+    "ast_hash": "409d7ead4dcbe432b123888db25ebdda",
+    "semantic_hash": ""
+  },
+  "src/app/(auth)/signin/_components/AuthForm.tsx": {
+    "mtime": 1787056960.9076025,
+    "ast_hash": "1a5b76c559ee23bbdfeb716fce0c6c72",
+    "semantic_hash": ""
+  },
+  "src/app/(auth)/signin/page.tsx": {
+    "mtime": 1787056078.606585,
+    "ast_hash": "2cc8efbd2dafec11a39c91123c4ad791",
+    "semantic_hash": ""
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1786253965.1791174,
+    "ast_hash": "8c01ce630b2c4b9be2b27dfcd38b88e4",
+    "semantic_hash": ""
+  },
+  "src/app/page.tsx": {
+    "mtime": 1786253563.3214512,
+    "ast_hash": "509e6c0807ee71a8828361acada7b6b4",
+    "semantic_hash": ""
+  },
+  "src/components/ui/breadcrumb.tsx": {
+    "mtime": 1786246900.0934107,
+    "ast_hash": "f42f6a0073354a8cf89f9d1123660c65",
+    "semantic_hash": ""
+  },
+  "src/components/ui/button.tsx": {
+    "mtime": 1786190436.700425,
+    "ast_hash": "37ff09090166aa7d6fae96e0b081e492",
+    "semantic_hash": ""
+  },
+  "src/components/ui/checkbox.tsx": {
+    "mtime": 1786247306.6904292,
+    "ast_hash": "09073231ed001b522fd23911b54ae2f5",
+    "semantic_hash": ""
+  },
+  "src/components/ui/field.tsx": {
+    "mtime": 1786246575.0332785,
+    "ast_hash": "1b038d62623c29946f57e746fb89cc7e",
+    "semantic_hash": ""
+  },
+  "src/components/ui/input.tsx": {
+    "mtime": 1786246499.4884956,
+    "ast_hash": "2b0e9e810580f227dd255d9b78a83835",
+    "semantic_hash": ""
+  },
+  "src/components/ui/label.tsx": {
+    "mtime": 1786246573.4035747,
+    "ast_hash": "e7e0c4ad98f3485ecd3c0ca516d0a8bf",
+    "semantic_hash": ""
+  },
+  "src/components/ui/password-input.tsx": {
+    "mtime": 1786246674.3893065,
+    "ast_hash": "6c84fdd6f9a547625ddbfe5e4735a569",
+    "semantic_hash": ""
+  },
+  "src/components/ui/select.tsx": {
+    "mtime": 1786247249.7111413,
+    "ast_hash": "611b5699ced6aad54c9a0e8cb865da7f",
+    "semantic_hash": ""
+  },
+  "src/components/ui/separator.tsx": {
+    "mtime": 1786246574.5079987,
+    "ast_hash": "f57449eae78fbd87d99e4edc45ab3c1e",
+    "semantic_hash": ""
+  },
+  "src/components/ui/sonner.tsx": {
+    "mtime": 1786200246.0418346,
+    "ast_hash": "f46214bc2a6a5153a6e04fad523d5587",
+    "semantic_hash": ""
+  },
+  "src/components/ui/textarea.tsx": {
+    "mtime": 1786247069.4878755,
+    "ast_hash": "d448d2a90e48542e51b93a1189127bf2",
+    "semantic_hash": ""
+  },
+  "src/components/ui/tooltip.tsx": {
+    "mtime": 1786247108.2218502,
+    "ast_hash": "b0b931c1a15ec3924fa5fecebaa15685",
+    "semantic_hash": ""
+  },
+  "src/lib/api/api.client.ts": {
+    "mtime": 1786200359.22147,
+    "ast_hash": "1077b5e85dd6e863597b901d394df3c1",
+    "semantic_hash": ""
+  },
+  "src/lib/api/provider.tsx": {
+    "mtime": 1786200282.3667045,
+    "ast_hash": "f13e3e4ecbece53bfd8a23a9e6333b22",
+    "semantic_hash": ""
+  },
+  "src/lib/api/query.client.ts": {
+    "mtime": 1786200278.3453386,
+    "ast_hash": "6834955332fee0cc17351b28c85311a1",
+    "semantic_hash": ""
+  },
+  "src/lib/config/axios.client.ts": {
+    "mtime": 1786200344.2054756,
+    "ast_hash": "4ccbe013cf05bc44fcc8fa47521dcc4a",
+    "semantic_hash": ""
+  },
+  "src/lib/font.ts": {
+    "mtime": 1786253877.1486216,
+    "ast_hash": "e853d2ad5d7939cf40ff529e5a92408a",
+    "semantic_hash": ""
+  },
+  "src/lib/utils.ts": {
+    "mtime": 1786199381.4870524,
+    "ast_hash": "e3f848f1b39f863e6164cf58b5a8e752",
+    "semantic_hash": ""
+  },
+  "src/shared/components/forms/CheckBoxField.tsx": {
+    "mtime": 1786247320.6507878,
+    "ast_hash": "16d27d81c199dd98a78a14c5dce1148e",
+    "semantic_hash": ""
+  },
+  "src/shared/components/forms/CheckBoxFieldWithDescription.tsx": {
+    "mtime": 1786247390.6431496,
+    "ast_hash": "06f95225a63e1fa3b90222d5354cb8df",
+    "semantic_hash": ""
+  },
+  "src/shared/components/forms/PasswordField.tsx": {
+    "mtime": 1786246714.6844976,
+    "ast_hash": "57e2b0d75f95adfc8679d66af238edb0",
+    "semantic_hash": ""
+  },
+  "src/shared/components/forms/SelectField.tsx": {
+    "mtime": 1786247323.3485682,
+    "ast_hash": "60a709760a4c0f8469419c2c66bc5410",
+    "semantic_hash": ""
+  },
+  "src/shared/components/forms/TextAreaField.tsx": {
+    "mtime": 1786247074.6117325,
+    "ast_hash": "bd46120b96dac93cd56db0cf33b31772",
+    "semantic_hash": ""
+  },
+  "src/shared/components/forms/TextField.tsx": {
+    "mtime": 1786246677.699567,
+    "ast_hash": "0b027ecd7a1196e897f3ec3cf602fa8c",
+    "semantic_hash": ""
+  },
+  "src/shared/ui/BreadCrumbs.tsx": {
+    "mtime": 1786246884.2813222,
+    "ast_hash": "df7de91b13868c859eb20c2a9c761d83",
+    "semantic_hash": ""
+  },
+  "src/shared/utils/api.helpers.ts": {
+    "mtime": 1786200393.643918,
+    "ast_hash": "f47f677b02c5a345a18a81ab7cb4cc92",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1786188064.9940977,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1787056889.5198226,
+    "ast_hash": "c3183fd5377c73abb0ee299e5727ba9f",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1786188731.073345,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1786187757.5075588,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": ""
+  },
+  "docs/ui-conventions.md": {
+    "mtime": 1786259417.1895342,
+    "ast_hash": "5543acf80578c2e8415395761029ba46",
+    "semantic_hash": ""
+  },
+  "src/modules/auth/queries/auth.keys.ts": {
+    "mtime": 1787056931.7537923,
+    "ast_hash": "6c21b8e0ae9bac5227d8bd79576e56d8",
+    "semantic_hash": ""
+  },
+  "src/modules/auth/queries/auth.queries.ts": {
+    "mtime": 1787056934.2280176,
+    "ast_hash": "21cfdbb82dc119727700202d1fd29c89",
+    "semantic_hash": ""
+  },
+  "src/modules/auth/schemas/auth.schema.ts": {
+    "mtime": 1787056923.8549194,
+    "ast_hash": "6a868fd2333bd396f9c69507bbff349f",
+    "semantic_hash": ""
+  },
+  "src/modules/auth/services/auth.services.ts": {
+    "mtime": 1787056928.9638066,
+    "ast_hash": "69aee9cc288b5e213deef8afd1a8a1bd",
+    "semantic_hash": ""
+  },
+  "src/modules/auth/types/auth.types.ts": {
+    "mtime": 1787056926.4944942,
+    "ast_hash": "8c9351cebb77efea7c7a96ee4db26bc7",
+    "semantic_hash": ""
+  }
+}
