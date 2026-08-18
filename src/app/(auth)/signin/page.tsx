@@ -9,10 +9,10 @@ export default function SignInPage() {
         </section>
 
         <section
-          className="hidden min-h-[620px] overflow-hidden rounded-lg border border-border bg-foreground text-background shadow-sm lg:block"
+          className="hidden min-h-155 overflow-hidden rounded-lg border border-border bg-foreground text-background shadow-sm lg:block"
           aria-label="Charlie member login visual"
         >
-          <div className="flex h-full min-h-[620px] flex-col justify-between bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.16),transparent_28%),linear-gradient(145deg,rgba(255,255,255,0.08),transparent_45%)] p-10">
+          <div className="flex h-full min-h-155 flex-col justify-between bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.16),transparent_28%),linear-gradient(145deg,rgba(255,255,255,0.08),transparent_45%)] p-10">
             <div>
               <p className="text-sm font-medium uppercase tracking-normal text-background/70">
                 Charlie Members
@@ -25,7 +25,9 @@ export default function SignInPage() {
             <div className="grid gap-4">
               <div className="rounded-lg border border-background/15 bg-background/10 p-5">
                 <p className="text-sm text-background/70">Step 1</p>
-                <p className="mt-2 text-xl font-medium">Confirm the email first.</p>
+                <p className="mt-2 text-xl font-medium">
+                  Confirm the email first.
+                </p>
               </div>
               <div className="rounded-lg border border-background/15 bg-background/10 p-5">
                 <p className="text-sm text-background/70">Step 2</p>

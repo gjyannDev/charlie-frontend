@@ -2,7 +2,10 @@
 
 ## shadcn Component Usage
 
-- Prefer existing primitives from `src/components/ui` before creating new custom UI.
+- Prefer shadcn-style primitives from `src/components/ui` before creating new custom UI.
+- For common UI structures such as cards, items, dialogs, sheets, forms, tables, alerts, buttons, inputs, selects, textareas, separators, breadcrumbs, tooltips, and toasts, use an existing shadcn primitive or add the matching shadcn primitive before building raw `div`-based markup.
+- Use `Card`, `CardHeader`, `CardContent`, `CardFooter`, and shadcn item/list primitives for card-like or item-like surfaces when those primitives exist in the repo.
+- If a needed shadcn primitive is missing, add it to `src/components/ui` and compose from it rather than scattering one-off structural markup through feature code.
 - Extend existing primitives through composition and wrappers instead of forking vendor behavior.
 - Keep cross-feature wrappers in `src/my-components/shared` when they are still domain-agnostic.
 - Keep feature-specific UI inside the owning feature folder.
@@ -11,6 +14,7 @@
 Current examples:
 
 - `DataTable`, `Button`, `Input`, `Select`, `Sheet`, `Dialog`, `Alert`
+- `Card`, `Item`, and similar shadcn primitives should be used broadly once available.
 - shared wrappers such as `TextField`, `SelectField`, `CheckboxField`, `TextAreaField`
 
 ## Tailwind Styling Rules
@@ -42,6 +46,7 @@ Current repo nuance:
 - Put low-level reusable UI in `src/components/ui`.
 - Put reusable form wrappers and small composition helpers in `src/my-components/shared`.
 - Keep business-specific sheets, tables, cards, and dialogs inside their feature directory.
+- Business-specific cards, item rows, panels, and empty/error surfaces should compose shadcn primitives instead of raw structural `div` shells.
 - Reuse `Field`, `FieldLabel`, `FieldDescription`, and `FieldError` through shared wrappers instead of rebuilding label/error markup.
 - Prefer the existing `DataTable` plus feature-local column definitions over bespoke table markup.
 
@@ -80,5 +85,6 @@ Current repo nuance:
 - Do not fetch API data directly inside page or presentational components; use feature query hooks.
 - Do not store server state in Zustand; Zustand is used here for auth/session and small client-only state.
 - Do not duplicate shared field, dialog, or table primitives when an existing wrapper already matches the need.
+- Do not build card-like, item-like, dialog-like, alert-like, sheet-like, or table-like UI from bare `div` markup when a shadcn primitive exists or should be added.
 - Do not introduce route protection only in the UI; sensitive pages still need `PageGuard`, `RoleGuard`, or both.
 - Do not add new vendor-style component copies when an existing `components/ui` primitive can be composed.

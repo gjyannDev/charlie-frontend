@@ -18,3 +18,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Keep reusable domain data-layer code under `src/modules/<domain>/`.
 - For auth work, place schemas, types, services, query keys, and query hooks under `src/modules/auth/`.
 - Do not put auth API-facing schemas, types, services, query keys, or query hooks directly under an App Router route folder.
+
+## UI Primitive Preference
+
+- Prefer shadcn-style primitives from `src/components/ui` for common UI structures.
+- Use or add shadcn primitives for cards, items, dialogs, sheets, forms, tables, alerts, buttons, inputs, selects, textareas, separators, breadcrumbs, tooltips, and toasts before writing raw structural markup.
+- Keep route and feature UI composed from primitives and shared wrappers instead of bare `div` shells for card-like or item-like surfaces.
