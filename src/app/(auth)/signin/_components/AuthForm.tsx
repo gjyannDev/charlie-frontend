@@ -12,7 +12,7 @@ import {
   signInEmailSchema,
   signInLoginRequestSchema,
 } from "@/modules/auth/schemas/auth.schema";
-import { getRoleLandingRoute } from "@/modules/auth/session/auth-session-routes";
+import { getRoleLandingRoute } from "@/modules/auth/session/auth-session";
 import type {
   SignInCredentialsFormValues,
   SignInEmailFormValues,

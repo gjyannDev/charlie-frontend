@@ -7,7 +7,7 @@ import {
   getAuthSessionRoute,
   getRoleLandingRoute,
   isPublicAuthRoute,
-} from "./src/modules/auth/session/auth-session-routes";
+} from "./src/modules/auth/session/auth-session";
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;

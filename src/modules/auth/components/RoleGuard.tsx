@@ -1,59 +1,64 @@
 "use client";
 
 import Link from "next/link";
+import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-import { useAuthSessionStore } from "../store/auth.store";
-import type { UserRole } from "../types/auth.types";
 import {
   canRoleAccessRoute,
   getRoleLandingRoute,
-} from "../session/auth-session-routes";
+} from "../session/auth-session";
+import { useAuthSessionStore } from "../store/auth.store";
+import type { UserRole } from "../types/auth.types";
 
-type AuthRequiredProps = {
+type RoleGuardProps = {
   children: React.ReactNode;
   allowedRoles?: readonly UserRole[];
+  redirectTo?: string;
+  fallback?: React.ReactNode;
 };
 
-export function AuthRequired({ children, allowedRoles }: AuthRequiredProps) {
+export function RoleGuard({
+  children,
+  allowedRoles,
+  redirectTo,
+  fallback,
+}: RoleGuardProps) {
   const status = useAuthSessionStore((state) => state.status);
   const currentProfile = useAuthSessionStore((state) => state.currentProfile);
   const recoveryReason = useAuthSessionStore((state) => state.recoveryReason);
 
   if (status === "idle" || status === "bootstrapping") {
-    return (
-      <AuthSessionShell
-        title="Restoring your session"
-        description="Charlie is checking your saved session before loading this page."
-      />
-    );
+    return <GuardState title="Verifying access" loading />;
   }
 
   if (status === "recovery") {
+    if (fallback) {
+      return fallback;
+    }
+
     return (
-      <AuthSessionShell
+      <GuardState
         title="Session recovery needed"
         description={getRecoveryDescription(recoveryReason)}
-        action={
-          <Button asChild>
-            <Link href="/signin">Sign in again</Link>
-          </Button>
-        }
+        actionLabel="Sign in again"
+        actionHref="/signin"
       />
     );
   }
 
   if (status !== "authenticated" || !currentProfile) {
+    if (fallback) {
+      return fallback;
+    }
+
     return (
-      <AuthSessionShell
+      <GuardState
         title="Sign in required"
         description="You need an active Charlie session to view this page."
-        action={
-          <Button asChild>
-            <Link href="/signin">Go to signin</Link>
-          </Button>
-        }
+        actionLabel="Go to signin"
+        actionHref="/signin"
       />
     );
   }
@@ -64,17 +69,16 @@ export function AuthRequired({ children, allowedRoles }: AuthRequiredProps) {
   };
 
   if (!canRoleAccessRoute(currentProfile.role, route)) {
+    if (fallback) {
+      return fallback;
+    }
+
     return (
-      <AuthSessionShell
+      <GuardState
         title="Role access required"
         description="Your current Charlie role does not have access to this page."
-        action={
-          <Button asChild variant="outline">
-            <Link href={getRoleLandingRoute(currentProfile.role)}>
-              Go to your dashboard
-            </Link>
-          </Button>
-        }
+        actionLabel="Go to your dashboard"
+        actionHref={redirectTo || getRoleLandingRoute(currentProfile.role)}
       />
     );
   }
@@ -82,14 +86,18 @@ export function AuthRequired({ children, allowedRoles }: AuthRequiredProps) {
   return children;
 }
 
-function AuthSessionShell({
+function GuardState({
   title,
   description,
-  action,
+  actionHref,
+  actionLabel,
+  loading = false,
 }: {
   title: string;
-  description: string;
-  action?: React.ReactNode;
+  description?: string;
+  actionHref?: string;
+  actionLabel?: string;
+  loading?: boolean;
 }) {
   return (
     <main className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -97,11 +105,24 @@ function AuthSessionShell({
         <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">
           Charlie Auth
         </p>
-        <h1 className="mt-3 text-2xl font-semibold tracking-tight">{title}</h1>
-        <p className="mt-3 text-sm leading-6 text-muted-foreground">
-          {description}
-        </p>
-        {action ? <div className="mt-6">{action}</div> : null}
+        <div className="mt-3 flex items-center gap-3">
+          {loading ? (
+            <Loader2 className="size-5 animate-spin text-primary" />
+          ) : null}
+          <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
+        </div>
+        {description ? (
+          <p className="mt-3 text-sm leading-6 text-muted-foreground">
+            {description}
+          </p>
+        ) : null}
+        {actionHref && actionLabel ? (
+          <div className="mt-6">
+            <Button asChild>
+              <Link href={actionHref}>{actionLabel}</Link>
+            </Button>
+          </div>
+        ) : null}
       </section>
     </main>
   );

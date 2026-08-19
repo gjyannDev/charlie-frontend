@@ -3,7 +3,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   clearAuthSessionHint,
   writeAuthSessionHint,
-} from "@/modules/auth/session/auth-session-hints";
+} from "@/modules/auth/session/auth-session";
 
 import { authKeys } from "./auth.keys";
 import { authService } from "../services/auth.services";

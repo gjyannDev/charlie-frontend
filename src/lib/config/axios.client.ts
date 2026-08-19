@@ -1,4 +1,4 @@
-import { clearAuthSessionHint } from "@/modules/auth/session/auth-session-hints";
+import { clearAuthSessionHint } from "@/modules/auth/session/auth-session";
 import { authSessionStore } from "@/modules/auth/store/auth.store";
 import type { LoginResponse } from "@/modules/auth/types/auth.types";
 import axios, {
