@@ -1,11 +1,11 @@
 # Graph Report - charlie-frontend  (2026-08-19)
 
 ## Corpus Check
-- 73 files · ~24,201 words
+- 73 files · ~23,935 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 345 nodes · 493 edges · 25 communities (19 shown, 6 thin omitted)
+- 336 nodes · 478 edges · 25 communities (19 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -21,7 +21,7 @@
 - devDependencies
 - components.json
 - ua-finalize.cjs
-- axios.client.ts
+- ApiClient
 - app/layout.tsx
 - UI Conventions
 - ua-summary.cjs
@@ -68,8 +68,8 @@
 ## Communities (25 total, 6 thin omitted)
 
 ### Community 0 - "cn"
-Cohesion: 0.07
-Nodes (41): Button(), buttonVariants, Checkbox(), Field(), FieldContent(), FieldDescription(), FieldError(), FieldGroup() (+33 more)
+Cohesion: 0.08
+Nodes (38): Checkbox(), Field(), FieldContent(), FieldDescription(), FieldError(), FieldLabel(), FieldLegend(), FieldSeparator() (+30 more)
 
 ### Community 1 - "dependencies"
 Cohesion: 0.04
@@ -91,9 +91,9 @@ Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent 
 Cohesion: 0.12
 Nodes (14): allowedEdgeTypes, assembled, edgeTypeMap, fileLevelTypes, fileNodeIds, fs, graph, intermediate (+6 more)
 
-### Community 7 - "axios.client.ts"
-Cohesion: 0.08
-Nodes (17): ApiClient, ApiResponse, API, AUTH_EXPIRED_STATUSES, AuthRequestConfig, axios, AxiosRequestConfig, isPublicAuthRequest() (+9 more)
+### Community 7 - "ApiClient"
+Cohesion: 0.17
+Nodes (4): ApiClient, ApiResponse, API, options
 
 ### Community 8 - "app/layout.tsx"
 Cohesion: 0.24
@@ -120,8 +120,8 @@ Cohesion: 0.50
 Nodes (3): analyzedFiles, fs, path
 
 ### Community 15 - "AuthForm.tsx"
-Cohesion: 0.11
-Nodes (27): AuthForm(), getErrorMessage(), LoginStep, authKeys, useCheckEmailMutation(), useCurrentProfileQuery(), useLogoutMutation(), useRefreshSessionMutation() (+19 more)
+Cohesion: 0.08
+Nodes (35): AuthForm(), getErrorMessage(), LoginStep, Button(), buttonVariants, FieldGroup(), FieldSet(), authKeys (+27 more)
 
 ### Community 16 - "Charlie Frontend Agent Instructions"
 Cohesion: 0.40
@@ -132,23 +132,23 @@ Cohesion: 0.26
 Nodes (9): Breadcrumb(), BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage(), BreadcrumbSeparator(), BreadcrumbsProps (+1 more)
 
 ## Knowledge Gaps
-- **148 isolated node(s):** `fs`, `fs`, `path`, `uaDir`, `intermediate` (+143 more)
+- **144 isolated node(s):** `fs`, `fs`, `path`, `uaDir`, `intermediate` (+139 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `cn` to `breadcrumb.tsx`?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
+- **Why does `cn()` connect `cn` to `breadcrumb.tsx`, `AuthForm.tsx`?**
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `devDependencies`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+  _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **Why does `FieldError()` connect `cn` to `AuthForm.tsx`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **What connects `fs`, `fs`, `path` to the rest of the system?**
-  _148 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _144 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `cn` be split into smaller, more focused modules?**
-  _Cohesion score 0.07475678443420379 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08007013442431327 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**

@@ -5,7 +5,7 @@
   "3": "devDependencies",
   "4": "components.json",
   "6": "ua-finalize.cjs",
-  "7": "axios.client.ts",
+  "7": "ApiClient",
   "8": "app/layout.tsx",
   "9": "UI Conventions",
   "10": "ua-summary.cjs",

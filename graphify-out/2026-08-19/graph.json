@@ -1755,8 +1755,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_ui_button",
-      "community": 0,
-      "community_name": "cn",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "button.tsx"
     },
     {
@@ -1766,8 +1766,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_components_ui_button_buttonvariants",
-      "community": 0,
-      "community_name": "cn",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "buttonvariants"
     },
     {
@@ -1778,8 +1778,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_button_button",
-      "community": 0,
-      "community_name": "cn",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "button()"
     },
     {
@@ -1824,8 +1824,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_field_fieldset",
-      "community": 0,
-      "community_name": "cn",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "fieldset()"
     },
     {
@@ -1848,8 +1848,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_field_fieldgroup",
-      "community": 0,
-      "community_name": "cn",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "fieldgroup()"
     },
     {
@@ -2283,7 +2283,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": "api.client.ts"
     },
     {
@@ -2296,7 +2296,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiresponse",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": "apiresponse"
     },
     {
@@ -2309,7 +2309,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": "apiclient"
     },
     {
@@ -2321,7 +2321,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient_defaults",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": ".defaults()"
     },
     {
@@ -2333,7 +2333,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient_get",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": ".get()"
     },
     {
@@ -2345,7 +2345,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient_post",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": ".post()"
     },
     {
@@ -2357,7 +2357,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient_put",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": ".put()"
     },
     {
@@ -2369,7 +2369,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient_patch",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": ".patch()"
     },
     {
@@ -2381,7 +2381,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient_delete",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": ".delete()"
     },
     {
@@ -2393,7 +2393,7 @@
       "_origin": "ast",
       "id": "src_lib_api_api_client_apiclient_downloadblob",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": ".downloadblob()"
     },
     {
@@ -2449,137 +2449,30 @@
       "_origin": "ast",
       "id": "src_lib_config_axios_client",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": "axios.client.ts"
-    },
-    {
-      "label": "axios",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_axios",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "axios"
-    },
-    {
-      "label": "AxiosRequestConfig",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L10",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_axiosrequestconfig",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "axiosrequestconfig"
-    },
-    {
-      "label": "AUTH_EXPIRED_STATUSES",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_auth_expired_statuses",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "auth_expired_statuses"
-    },
-    {
-      "label": "PUBLIC_AUTH_PATHS",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_public_auth_paths",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "public_auth_paths"
     },
     {
       "label": "options",
       "file_type": "code",
       "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L27",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "src_lib_config_axios_client_options",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": "options"
     },
     {
       "label": "API",
       "file_type": "code",
       "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L36",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "src_lib_config_axios_client_api",
       "community": 7,
-      "community_name": "axios.client.ts",
+      "community_name": "ApiClient",
       "norm_label": "api"
-    },
-    {
-      "label": "AuthRequestConfig",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L38",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_authrequestconfig",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "authrequestconfig"
-    },
-    {
-      "label": "isPublicAuthRequest()",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L45",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_ispublicauthrequest",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "ispublicauthrequest()"
-    },
-    {
-      "label": "shouldAttachAccessToken()",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L53",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_shouldattachaccesstoken",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "shouldattachaccesstoken()"
-    },
-    {
-      "label": "shouldRefresh()",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L57",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_shouldrefresh",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "shouldrefresh()"
-    },
-    {
-      "label": "getRefreshRequest()",
-      "file_type": "code",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L71",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_config_axios_client_getrefreshrequest",
-      "community": 7,
-      "community_name": "axios.client.ts",
-      "norm_label": "getrefreshrequest()"
     },
     {
       "label": "font.ts",
@@ -2865,8 +2758,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_modules_auth_store_auth_store",
-      "community": 7,
-      "community_name": "axios.client.ts",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "auth.store.ts"
     },
     {
@@ -2878,8 +2771,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_modules_auth_store_auth_store_authstatus",
-      "community": 7,
-      "community_name": "axios.client.ts",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "authstatus"
     },
     {
@@ -2891,8 +2784,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_modules_auth_store_auth_store_recoveryreason",
-      "community": 7,
-      "community_name": "axios.client.ts",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "recoveryreason"
     },
     {
@@ -2904,8 +2797,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_modules_auth_store_auth_store_authsessionstate",
-      "community": 7,
-      "community_name": "axios.client.ts",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "authsessionstate"
     },
     {
@@ -2915,8 +2808,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_modules_auth_store_auth_store_useauthsessionstore",
-      "community": 7,
-      "community_name": "axios.client.ts",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "useauthsessionstore"
     },
     {
@@ -2926,8 +2819,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "src_modules_auth_store_auth_store_authsessionstore",
-      "community": 7,
-      "community_name": "axios.client.ts",
+      "community": 15,
+      "community_name": "AuthForm.tsx",
       "norm_label": "authsessionstore"
     },
     {
@@ -3188,8 +3081,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_shared_components_forms_passwordfield_passwordfield",
-      "community": 15,
-      "community_name": "AuthForm.tsx",
+      "community": 0,
+      "community_name": "cn",
       "norm_label": "passwordfield()"
     },
     {
@@ -7821,7 +7714,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L36",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_lib_config_axios_client",
@@ -7832,158 +7725,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_auth_expired_statuses",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_authrequestconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_axios",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_axiosrequestconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L71",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_getrefreshrequest",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_ispublicauthrequest",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L27",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_lib_config_axios_client",
       "target": "src_lib_config_axios_client_options",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_public_auth_paths",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L53",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_shouldattachaccesstoken",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L57",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_lib_config_axios_client_shouldrefresh",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_modules_auth_store_auth_store",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_modules_auth_store_auth_store_authsessionstore",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_modules_auth_types_auth_types",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client",
-      "target": "src_modules_auth_types_auth_types_loginresponse",
       "confidence_score": 1.0
     },
     {
@@ -8008,30 +7754,6 @@
       "_origin": "ast",
       "source": "src_modules_auth_services_auth_services",
       "target": "src_lib_config_axios_client_api",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client_shouldattachaccesstoken",
-      "target": "src_lib_config_axios_client_ispublicauthrequest",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/config/axios.client.ts",
-      "source_location": "L67",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_lib_config_axios_client_shouldrefresh",
-      "target": "src_lib_config_axios_client_ispublicauthrequest",
       "confidence_score": 1.0
     },
     {

@@ -6,11 +6,13 @@ import {
   useCheckEmailMutation,
   useSignInMutation,
 } from "@/modules/auth/queries/auth.queries";
+import { authSessionStore } from "@/modules/auth/store/auth.store";
 import {
   signInCredentialsSchema,
   signInEmailSchema,
   signInLoginRequestSchema,
 } from "@/modules/auth/schemas/auth.schema";
+import { getRoleLandingRoute } from "@/modules/auth/session/auth-session-routes";
 import type {
   SignInCredentialsFormValues,
   SignInEmailFormValues,
@@ -19,6 +21,7 @@ import { PasswordField } from "@/shared/components/forms/PasswordField";
 import { TextField } from "@/shared/components/forms/TextField";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -33,6 +36,7 @@ function getErrorMessage(error: unknown, fallback: string) {
 }
 
 export default function AuthForm() {
+  const router = useRouter();
   const [step, setStep] = useState<LoginStep>("email");
   const [recognizedEmail, setRecognizedEmail] = useState("");
   const [emailNotFound, setEmailNotFound] = useState(false);
@@ -82,6 +86,9 @@ export default function AuthForm() {
     });
 
     await signInMutation.mutateAsync(loginRequest);
+
+    const currentProfile = authSessionStore.getState().currentProfile;
+    router.replace(getRoleLandingRoute(currentProfile?.role));
   });
 
   const isCheckingEmail =
