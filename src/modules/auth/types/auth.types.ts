@@ -18,7 +18,7 @@ export type EmailCheckResponse = {
 
 export type LoginResponse = {
   access_token: string;
-  refresh_token: string | null;
+  refresh_token: string;
   token_type: "bearer" | string;
 };
 

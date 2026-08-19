@@ -1,6 +1,6 @@
 import { clearAuthSessionHint } from "@/modules/auth/session/auth-session";
 import { authSessionStore } from "@/modules/auth/store/auth.store";
-import type { LoginResponse } from "@/modules/auth/types/auth.types";
+import type { RefreshSessionResponse } from "@/modules/auth/types/auth.types";
 import axios, {
   AxiosHeaders,
   type AxiosError,
@@ -41,7 +41,7 @@ type AuthRequestConfig = InternalAxiosRequestConfig & {
   _skipAuthRefresh?: boolean;
 };
 
-let refreshRequest: Promise<LoginResponse> | null = null;
+let refreshRequest: Promise<RefreshSessionResponse> | null = null;
 
 function isPublicAuthRequest(url?: string) {
   if (!url) {
@@ -82,7 +82,7 @@ function getRefreshRequest() {
     return Promise.reject(new Error("Refresh token is unavailable"));
   }
 
-  refreshRequest = API.post<LoginResponse>(
+  refreshRequest = API.post<RefreshSessionResponse>(
     "/auth/refresh",
     { refresh_token: refreshToken },
     { _skipAuthRefresh: true },

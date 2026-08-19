@@ -1,7 +1,11 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
-import type { CurrentUserProfile, LoginResponse } from "../types/auth.types";
+import type {
+  CurrentUserProfile,
+  LoginResponse,
+  RefreshSessionResponse,
+} from "../types/auth.types";
 
 export type AuthStatus =
   | "idle"
@@ -27,7 +31,7 @@ export type AuthSessionState = {
   setCurrentProfile: (currentProfile: CurrentUserProfile | null) => void;
   setStatus: (status: AuthStatus) => void;
   applyLoginResponse: (response: LoginResponse) => void;
-  applyRefreshResponse: (response: LoginResponse) => void;
+  applyRefreshResponse: (response: RefreshSessionResponse) => void;
   completeAuthentication: (currentProfile: CurrentUserProfile) => void;
   enterRecovery: (reason: Exclude<RecoveryReason, null>) => void;
   clearSession: () => void;
@@ -58,7 +62,7 @@ export const useAuthSessionStore = create<AuthSessionState>()(
       applyRefreshResponse: (response) =>
         set((state) => ({
           accessToken: response.access_token,
-          refreshToken: response.refresh_token ?? state.refreshToken,
+          refreshToken: response.refresh_token,
           tokenType: response.token_type || state.tokenType || DEFAULT_TOKEN_TYPE,
           status: "bootstrapping",
           recoveryReason: null,
