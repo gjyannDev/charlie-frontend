@@ -1,18 +1,19 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { FieldError, FieldGroup, FieldSet } from "@/components/ui/field";
+import { FieldGroup, FieldSet } from "@/components/ui/field";
+import { useMutationCallbacks } from "@/hooks/use-mutation-callback";
 import {
   useCheckEmailMutation,
   useSignInMutation,
 } from "@/modules/auth/queries/auth.queries";
-import { authSessionStore } from "@/modules/auth/store/auth.store";
 import {
   signInCredentialsSchema,
   signInEmailSchema,
   signInLoginRequestSchema,
 } from "@/modules/auth/schemas/auth.schema";
 import { getRoleLandingRoute } from "@/modules/auth/session/auth-session";
+import { authSessionStore } from "@/modules/auth/store/auth.store";
 import type {
   SignInCredentialsFormValues,
   SignInEmailFormValues,
@@ -27,22 +28,22 @@ import { useForm } from "react-hook-form";
 
 type LoginStep = "email" | "credentials";
 
-function getErrorMessage(error: unknown, fallback: string) {
-  if (error instanceof Error && error.message) {
-    return error.message;
-  }
-
-  return fallback;
-}
-
 export default function AuthForm() {
   const router = useRouter();
   const [step, setStep] = useState<LoginStep>("email");
   const [recognizedEmail, setRecognizedEmail] = useState("");
-  const [emailNotFound, setEmailNotFound] = useState(false);
 
   const checkEmailMutation = useCheckEmailMutation();
   const signInMutation = useSignInMutation();
+  const { buildCallbacks } = useMutationCallbacks({
+    entityName: "Authentication",
+  });
+  const checkEmailCallbacks = buildCallbacks("check", "member account", {
+    errorMessage: "Unable to continue with that email",
+  });
+  const signInCallbacks = buildCallbacks("sign in", "member session", {
+    errorMessage: "Unable to sign in",
+  });
 
   const emailForm = useForm<SignInEmailFormValues>({
     resolver: zodResolver(signInEmailSchema),
@@ -61,22 +62,23 @@ export default function AuthForm() {
   });
 
   const submitEmail = emailForm.handleSubmit(async (values) => {
-    setEmailNotFound(false);
+    try {
+      const response = await checkEmailMutation.mutateAsync(values);
 
-    const response = await checkEmailMutation.mutateAsync(values);
+      if (!response.exists) {
+        return;
+      }
 
-    if (!response.exists) {
-      setEmailNotFound(true);
-      return;
+      setRecognizedEmail(values.email);
+      credentialsForm.reset({
+        email: values.email,
+        password: "",
+        confirmPassword: "",
+      });
+      setStep("credentials");
+    } catch (error) {
+      checkEmailCallbacks.onError(error);
     }
-
-    setRecognizedEmail(values.email);
-    credentialsForm.reset({
-      email: values.email,
-      password: "",
-      confirmPassword: "",
-    });
-    setStep("credentials");
   });
 
   const submitCredentials = credentialsForm.handleSubmit(async (values) => {
@@ -85,15 +87,20 @@ export default function AuthForm() {
       password: values.password,
     });
 
-    await signInMutation.mutateAsync(loginRequest);
+    try {
+      await signInMutation.mutateAsync(loginRequest);
 
-    const currentProfile = authSessionStore.getState().currentProfile;
-    router.replace(getRoleLandingRoute(currentProfile?.role));
+      const currentProfile = authSessionStore.getState().currentProfile;
+      router.replace(getRoleLandingRoute(currentProfile?.role));
+    } catch (error) {
+      signInCallbacks.onError(error);
+    }
   });
 
   const isCheckingEmail =
     checkEmailMutation.isPending || emailForm.formState.isSubmitting;
-  const isSigningIn = signInMutation.isPending || credentialsForm.formState.isSubmitting;
+  const isSigningIn =
+    signInMutation.isPending || credentialsForm.formState.isSubmitting;
 
   if (step === "credentials") {
     return (
@@ -140,12 +147,6 @@ export default function AuthForm() {
           </FieldGroup>
         </FieldSet>
 
-        {signInMutation.isError && (
-          <FieldError>
-            {getErrorMessage(signInMutation.error, "Unable to sign in. Try again.")}
-          </FieldError>
-        )}
-
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button
             type="button"
@@ -167,7 +168,12 @@ export default function AuthForm() {
             <ArrowLeft className="size-4" aria-hidden="true" />
             Change email
           </Button>
-          <Button type="submit" size="lg" className="h-11 flex-1" disabled={isSigningIn}>
+          <Button
+            type="submit"
+            size="lg"
+            className="h-11 flex-1"
+            disabled={isSigningIn}
+          >
             {isSigningIn ? "Signing in..." : "Sign in"}
           </Button>
         </div>
@@ -206,23 +212,12 @@ export default function AuthForm() {
         </FieldGroup>
       </FieldSet>
 
-      {emailNotFound && (
-        <FieldError>
-          We could not find a member account for that email. Check the address
-          or contact support.
-        </FieldError>
-      )}
-
-      {checkEmailMutation.isError && (
-        <FieldError>
-          {getErrorMessage(
-            checkEmailMutation.error,
-            "Unable to check this email. Try again.",
-          )}
-        </FieldError>
-      )}
-
-      <Button type="submit" size="lg" className="h-11 w-full" disabled={isCheckingEmail}>
+      <Button
+        type="submit"
+        size="lg"
+        className="h-11 w-full"
+        disabled={isCheckingEmail}
+      >
         {isCheckingEmail ? "Checking email..." : "Continue"}
         {!isCheckingEmail && <ArrowRight className="size-4" aria-hidden="true" />}
       </Button>

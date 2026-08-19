@@ -18,6 +18,20 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Keep reusable domain data-layer code under `src/modules/<domain>/`.
 - For auth work, place schemas, types, services, query keys, and query hooks under `src/modules/auth/`.
 - Do not put auth API-facing schemas, types, services, query keys, or query hooks directly under an App Router route folder.
+- Keep auth-session helper logic consolidated under `src/modules/auth/session/`.
+- Prefer a single auth-session module such as `auth-session.ts` over multiple tiny helper files unless the auth-session surface has clearly grown beyond one cohesive module.
+- Keep protected-surface guard components under `src/modules/auth/components/`.
+- Prefer a shared `RoleGuard` for protected route UI instead of ad hoc page-level auth checks.
+
+## Auth Error Boundary
+
+- Auth service files should only perform transport calls and payload mapping.
+- Auth query hooks may own success-side session orchestration such as token application, profile hydration, cache updates, and recovery-state updates.
+- Do not normalize or toast errors inside auth services or auth query hooks by default.
+- Let raw transport errors bubble out of query hooks.
+- Normalize backend errors at the UI boundary, for example in a submit handler or shared mutation callback helper.
+- For mutation failures and backend-driven auth failures, prefer Sonner toasts over inline page-level error blocks.
+- Keep inline form errors for schema or field validation, not for transport failures that should be surfaced globally.
 
 ## UI Primitive Preference
 

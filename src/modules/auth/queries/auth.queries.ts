@@ -1,4 +1,3 @@
-import { normalizeError } from "@/shared/utils/api.helpers";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   clearAuthSessionHint,
@@ -18,13 +17,7 @@ import type {
 export function useCheckEmailMutation() {
   return useMutation({
     mutationKey: authKeys.emailCheck(),
-    mutationFn: async (params: SignInEmailFormValues) => {
-      try {
-        return await authService.checkEmail(params);
-      } catch (error) {
-        throw normalizeError(error);
-      }
-    },
+    mutationFn: (params: SignInEmailFormValues) => authService.checkEmail(params),
   });
 }
 
@@ -34,25 +27,26 @@ export function useSignInMutation() {
   return useMutation({
     mutationKey: authKeys.login(),
     mutationFn: async (params: SignInLoginRequest) => {
-      try {
-        const response = await authService.login(params);
-        authSessionStore.getState().applyLoginResponse(response);
+      const response = await authService.login(params);
+      authSessionStore.getState().applyLoginResponse(response);
 
-        try {
-          const profile = await authService.me();
-          authSessionStore.getState().completeAuthentication(profile);
-          writeAuthSessionHint(profile);
-          queryClient.setQueryData(authKeys.currentProfile(), profile);
-        } catch (error) {
-          authSessionStore.getState().enterRecovery("profile-failed");
-          clearAuthSessionHint();
-          throw error;
-        }
+      const profile = await authService.me();
+      authSessionStore.getState().completeAuthentication(profile);
+      writeAuthSessionHint(profile);
+      queryClient.setQueryData(authKeys.currentProfile(), profile);
 
-        return response;
-      } catch (error) {
-        throw normalizeError(error);
+      return response;
+    },
+    onError: () => {
+      const { status } = authSessionStore.getState();
+
+      if (status !== "bootstrapping") {
+        return;
       }
+
+      authSessionStore.getState().enterRecovery("profile-failed");
+      clearAuthSessionHint();
+      queryClient.removeQueries({ queryKey: authKeys.currentProfile() });
     },
   });
 }
@@ -60,13 +54,7 @@ export function useSignInMutation() {
 export function useRefreshSessionMutation() {
   return useMutation({
     mutationKey: authKeys.refresh(),
-    mutationFn: async (params: RefreshSessionRequest) => {
-      try {
-        return await authService.refresh(params);
-      } catch (error) {
-        throw normalizeError(error);
-      }
-    },
+    mutationFn: (params: RefreshSessionRequest) => authService.refresh(params),
   });
 }
 
@@ -75,13 +63,7 @@ export function useLogoutMutation() {
 
   return useMutation({
     mutationKey: authKeys.logout(),
-    mutationFn: async (params: LogoutRequest) => {
-      try {
-        return await authService.logout(params);
-      } catch (error) {
-        throw normalizeError(error);
-      }
-    },
+    mutationFn: (params: LogoutRequest) => authService.logout(params),
     onSuccess: () => {
       authSessionStore.getState().clearSession();
       clearAuthSessionHint();
@@ -93,13 +75,7 @@ export function useLogoutMutation() {
 export function useCurrentProfileQuery(enabled = true) {
   return useQuery({
     queryKey: authKeys.currentProfile(),
-    queryFn: async () => {
-      try {
-        return await authService.me();
-      } catch (error) {
-        throw normalizeError(error);
-      }
-    },
+    queryFn: () => authService.me(),
     enabled,
   });
 }
